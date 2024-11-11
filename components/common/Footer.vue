@@ -1,4 +1,3 @@
-
 <template>
     <!-- ========== FOOTER ========== -->
     <footer class="mt-auto w-full py-10 px-4 sm:px-6 lg:px-8 mx-auto bg-gray-50">
@@ -32,7 +31,7 @@
 
 
 <script setup>
-import xLogo from '~/assets/images/x-logo-black.png'
+import xLogo from "~/assets/images/x-logo-black.png";
 
-const date = new Date().getFullYear()
+const date = new Date().getFullYear();
 </script>
