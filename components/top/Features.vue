@@ -17,10 +17,10 @@
         <div class="space-y-6 sm:space-y-8">
           <!-- Title -->
           <div class="space-y-2 md:space-y-4">
-            <p class="text-gray-500 dark:text-neutral-500">
-              <p>『SQL Everyone』はデータ分析内製化に向けた人材育成サービスです。</p>
+            <div class="text-gray-500 dark:text-neutral-500">
+              <p class="mb-3">『SQL Everyone』はデータ分析内製化に向けた人材育成サービスです。</p>
               <p>そのためにSQLを使ったデータ分析人材の育成をサポートします。SQLを全く知らない人が受けてもデータ分析で使えるSQLが学べるように、短期間でハンズオンを実施しながら効率よくSQLを学ぶサービスとなっています。</p>
-            </p>
+            </div>
           </div>
           <!-- End Title -->
 
@@ -77,7 +77,7 @@
                 <span
                   class="text-sm sm:text-base text-gray-500 dark:text-neutral-500"
                 >
-                  Powerful <span class="font-bold">features</span>
+                  <span class="font-bold">マンツーマン</span>で実践で使えるSQLを学習
                 </span>
               </div>
             </li>
@@ -105,7 +105,7 @@
                 <span
                   class="text-sm sm:text-base text-gray-500 dark:text-neutral-500"
                 >
-                  User Experience Design
+                  データ分析内製化に向けて中長期の支援
                 </span>
               </div>
             </li>

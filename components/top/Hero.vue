@@ -22,7 +22,7 @@
 
       <!-- Buttons -->
       <div class="mt-8 gap-3 flex justify-center">
-        <a class="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500 border border-transparent text-white text-sm font-bold rounded-full py-3 px-4" href="https://forms.gle/CFKuJCcG81J5EwVA6" target="_blank">
+        <a class="w-64 inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500 border border-transparent text-white text-lg font-bold rounded-full py-3 px-4" href="https://forms.gle/CFKuJCcG81J5EwVA6" target="_blank">
             <svg class="shrink-0 w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
             <path d="M9 2C7.89543 2 7 2.89543 7 4V5H5C3.89543 5 3 5.89543 3 7V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V7C21 5.89543 20.1046 5 19 5H17V4C17 2.89543 16.1046 2 15 2H9ZM9 4H15V5H9V4ZM5 7H19V19H5V7ZM7 9V11H17V9H7ZM7 13V15H17V13H7ZM7 17V19H17V17H7Z" />
             </svg>
