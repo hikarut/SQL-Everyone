@@ -5,6 +5,7 @@
     <TopFeatures />
     <TopDocument />
     <TopDetail />
+    <TopProfile />
     <CommonFooter />
   </div>
 </template>
