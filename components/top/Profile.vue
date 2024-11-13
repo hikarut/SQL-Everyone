@@ -1,6 +1,22 @@
 <template>
-  <div class="bg-gray-100">
-    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+  <!-- <div class="bg-gray-100"> -->
+  <div class="relative overflow-hidden">
+
+    <!-- Gradients -->
+    <div
+      aria-hidden="true"
+      class="flex absolute -top-96 start-1/2 transform -translate-x-1/2"
+    >
+      <div
+        class="bg-gradient-to-r from-violet-300/50 to-purple-100 blur-3xl w-[25rem] h-[44rem] rotate-[-60deg] transform -translate-x-[10rem] dark:from-violet-900/50 dark:to-purple-900"
+      ></div>
+      <div
+        class="bg-gradient-to-tl from-blue-50 via-blue-100 to-blue-50 blur-3xl w-[90rem] h-[50rem] rounded-fulls origin-top-left -rotate-12 -translate-x-[15rem] dark:from-indigo-900/70 dark:via-indigo-900/70 dark:to-blue-900/70"
+      ></div>
+    </div>
+    <!-- End Gradients -->
+
+    <div class="max-w-[65rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto relative z-10">
       <h2
         class="font-bold text-3xl lg:text-4xl text-gray-800 dark:text-neutral-200 text-center mb-6"
       >
@@ -18,11 +34,11 @@
 
         <div class="grow">
           <h1 class="text-lg font-medium text-gray-800 dark:text-neutral-200">
-            高橋 光（Takahashi Hikaru）
+            <p>高橋 光</p>
+            <p class="mb-2">Takahashi Hikaru</p>
           </h1>
           <p class="text-sm text-gray-600 dark:text-neutral-400">
-            元Webエンジニア / データアナリスト /
-            デジタルマーケティングコンサルタント / データドリブンコンサルタント
+            元Webエンジニア / デジタルマーケティングコンサルタント / データドリブンコンサルタント
           </p>
         </div>
       </div>
@@ -65,7 +81,7 @@
               class="text-[13px] text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:outline-none focus:decoration-2 dark:text-neutral-500 dark:hover:text-neutral-400"
               href="#"
             >
-              elianagarcia997@about.me
+              ht.hikaru.takahashi@gmail.com
             </a>
           </li>
 
@@ -85,18 +101,36 @@
             </svg>
             <a
               class="text-[13px] text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:outline-none focus:decoration-2 dark:text-neutral-500 dark:hover:text-neutral-400"
-              href="#"
+              href="https://x.com/light940"
+              target="_blank"
             >
-              @elianagarcia997
+              @light940
             </a>
           </li>
         </ul>
       </div>
       <!-- End About -->
+
+      <div class="flex items-center gap-x-3 mt-10">
+        <div class="shrink-0">
+          <img
+            class="w-32 mx-auto"
+            :src="bookImage"
+          />
+        </div>
+
+        <div class="grow">
+          <h2 class="text-base font-medium text-gray-800 dark:text-neutral-200">
+            著書：データ分析力を高める ビジネスパーソンのためのSQL入門（技術評論社）
+          </h2>
+        </div>
+      </div>
+
     </div>
   </div>
 </template>
 
 <script setup>
 import profileImage from "~/assets/images/profile.jpg";
+import bookImage from "~/assets/images/book.jpg";
 </script>
