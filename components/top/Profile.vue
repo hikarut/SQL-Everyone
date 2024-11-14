@@ -113,15 +113,17 @@
 
       <div class="flex items-center gap-x-3 mt-10">
         <div class="shrink-0">
+          <a href="https://www.amazon.co.jp/dp/4297134438/" target="_blank">
           <img
             class="w-32 mx-auto"
             :src="bookImage"
           />
+          </a>
         </div>
 
         <div class="grow">
           <h2 class="text-base font-medium text-gray-800 dark:text-neutral-200">
-            著書：データ分析力を高める ビジネスパーソンのためのSQL入門（技術評論社）
+            著書：<a href="https://www.amazon.co.jp/dp/4297134438/" target="_blank">データ分析力を高める ビジネスパーソンのためのSQL入門（技術評論社）</a>
           </h2>
         </div>
       </div>

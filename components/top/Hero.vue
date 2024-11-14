@@ -3,7 +3,7 @@
   <div
     class="relative overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-[url('https://preline.co/assets/svg/examples/squared-bg-element.svg')] dark:before:bg-[url('https://preline.co/assets/svg/examples-dark/squared-bg-element.svg')] before:bg-no-repeat before:bg-top before:size-full before:-z-[1] before:transform before:-translate-x-1/2"
   >
-    <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-10">
+    <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 sm:pt-12 pb-10">
 
       <!-- Gradients -->
       <!-- <div
@@ -34,6 +34,10 @@
         </h1>
       </div>
       <!-- End Title -->
+
+      <div>
+        <img class="rounded-xl w-16 h-16 mx-auto mt-3" :src="sqlIconImage" alt="Features Image" />
+      </div>
 
       <div class="mt-5 max-w-3xl text-center mx-auto relative z-10">
         <p class="text-lg text-gray-600 dark:text-neutral-400">
@@ -67,3 +71,7 @@
   </div>
   <!-- End Hero -->
 </template>
+
+<script setup>
+import sqlIconImage from "~/public/sql_icon.png";
+</script>

@@ -6,6 +6,7 @@
     <TopDocument />
     <TopDetail />
     <TopProfile />
+    <TopPrice />
     <CommonFooter />
   </div>
 </template>
