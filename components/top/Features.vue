@@ -2,14 +2,15 @@
   <!-- Features -->
   <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
     <h2
-        class="font-bold text-3xl lg:text-4xl text-gray-800 dark:text-neutral-200 text-center mb-3"
+      class="font-bold text-3xl lg:text-4xl text-gray-800 dark:text-neutral-200 text-center mb-3"
     >
-        サービス概要
+      サービス概要
     </h2>
     <!-- Grid -->
     <div class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
       <div>
         <img class="rounded-xl" :src="featureImage" alt="Features Image" />
+        <!-- <img class="rounded-xl" :src="levelImage" alt="Features Image" /> -->
       </div>
       <!-- End Col -->
 
@@ -18,8 +19,12 @@
           <!-- Title -->
           <div class="space-y-2 md:space-y-4">
             <div class="text-gray-500 dark:text-neutral-500">
-              <p class="mb-3">『SQL Everyone』はデータ分析内製化に向けた人材育成サービスです。</p>
-              <p>SQLを使ったデータ分析人材を育成することでデータ分析内製化を支援します。SQLを全く知らない人が受けてもデータ分析で使えるSQLが学べるように、2つのサービスを提供しています。</p>
+              <p class="mb-3">
+                『SQL Everyone』はデータ分析内製化に向けた人材育成サービスです。
+              </p>
+              <p>
+                目的・レベルに合わせたSQL分析人材を育成することでデータ分析内製化を支援します。SQLを全く知らない人が受けてもデータ分析で使えるSQLが学べるように、2つのサービスを提供しています。
+              </p>
             </div>
           </div>
           <!-- End Title -->
@@ -49,7 +54,10 @@
                 <span
                   class="text-sm sm:text-base text-gray-500 dark:text-neutral-500"
                 >
-                  SQLの基礎をハンズオンで学ぶ<span class="font-bold bg-clip-text bg-gradient-to-tr from-blue-600 to-purple-400 text-transparent">『集合研修プラン』</span>
+                  SQLの基礎をハンズオンで学ぶ<span
+                    class="font-bold bg-clip-text bg-gradient-to-tr from-blue-600 to-purple-400 text-transparent"
+                    >『集合研修プラン』</span
+                  >
                 </span>
               </div>
             </li>
@@ -77,11 +85,13 @@
                 <span
                   class="text-sm sm:text-base text-gray-500 dark:text-neutral-500"
                 >
-                  マンツーマンでSQLを学ぶ<span class="font-bold bg-clip-text bg-gradient-to-tr from-blue-600 to-purple-400 text-transparent">『マンツーマントレーニングプラン』</span>
+                  マンツーマンでSQLを学ぶ<span
+                    class="font-bold bg-clip-text bg-gradient-to-tr from-blue-600 to-purple-400 text-transparent"
+                    >『マンツーマントレーニングプラン』</span
+                  >
                 </span>
               </div>
             </li>
-
           </ul>
           <!-- End List -->
         </div>
@@ -89,6 +99,77 @@
       <!-- End Col -->
     </div>
     <!-- End Grid -->
+
+    <!-- <div>
+      <img
+        class="mt-3 w-full md:w-1/2 lg:w-1/2 object-cover block mx-auto"
+        :src="levelImage"
+        alt="データ分析に必要なSQLの6つのレベル"
+      />
+    </div> -->
+
+    <!-- Card Blog -->
+    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+      <!-- Grid -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-2 gap-6">
+        <!-- Card -->
+        <div
+          class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70"
+        >
+          <div
+            class="h-52 flex flex-col justify-center items-center rounded-t-xl"
+          >
+            <p class="mr-8 ml-8 text-3xl font-bold bg-clip-text bg-gradient-to-tr from-blue-600 to-purple-400 text-transparent">集合研修プラン</p>
+          </div>
+          <div class="p-4 md:p-6">
+            <!-- <span
+              class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500"
+            >
+              Atlassian API
+            </span> -->
+            <h3
+              class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white"
+            >
+              データ分析で使うSQLの基礎を学習
+            </h3>
+            <p class="mt-3 text-gray-500 dark:text-neutral-500">
+              ビジネスパーソン向けにSQLの基礎について学習。ハンズオンを交えてデータ分析で使うSQLについて理解を深める研修。
+            </p>
+          </div>
+        </div>
+        <!-- End Card -->
+
+        <!-- Card -->
+        <div
+          class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70"
+        >
+          <div
+            class="h-52 flex flex-col justify-center items-center rounded-t-xl"
+          >
+            <p class="mr-8 ml-8 text-3xl font-bold bg-clip-text bg-gradient-to-tr from-blue-600 to-purple-400 text-transparent">マンツーマントレーニングプラン</p>
+          </div>
+          <div class="p-4 md:p-6">
+            <!-- <span
+              class="block mb-1 text-xs font-semibold uppercase text-rose-600 dark:text-rose-500"
+            >
+              Asana API
+            </span> -->
+            <h3
+              class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white"
+            >
+              実務のデータ分析でSQLが使えるように学習
+            </h3>
+            <p class="mt-3 text-gray-500 dark:text-neutral-500">
+              データ分析で使うSQLをマンツーマンで基礎から応用まで学習。ゼロから3ヶ月で実務でSQLを使えるレベルまで教育。
+            </p>
+          </div>
+        </div>
+        <!-- End Card -->
+      </div>
+      <!-- End Grid -->
+    </div>
+    <!-- End Card Blog -->
+
   </div>
   <!-- End Features -->
 </template>

@@ -128,7 +128,7 @@
               <polyline points="20 6 9 17 4 12" />
             </svg>
             <span class="text-gray-800 dark:text-neutral-400">
-              ゴール：SQLの概要・データ分析について理解する
+              ゴール：データ分析で使うSQLの概要について理解する
             </span>
           </li>
         </ul>
