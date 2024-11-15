@@ -38,7 +38,7 @@
         </a>
       </div>
 
-      <div class="mt-8 gap-3 flex justify-center">
+      <div class="mt-8 gap-3 flex justify-center text-gray-600">
         詳細資料については以下からご確認いただけます。
       </div>
 

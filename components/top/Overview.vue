@@ -20,7 +20,7 @@
           <div class="space-y-2 md:space-y-4">
             <div class="text-gray-500 dark:text-neutral-500">
               <p class="mb-3">
-                『SQL Everyone』はデータ分析内製化に向けた人材育成サービスです。
+                『SQL Everyone』はデータ分析内製化支援サービスです。
               </p>
               <p>
                 目的・レベルに合わせたSQL分析人材を育成することでデータ分析内製化を支援します。SQLを全く知らない人が受けてもデータ分析で使えるSQLが学べるように、2つのサービスを提供しています。
@@ -52,7 +52,7 @@
               </span>
               <div class="grow">
                 <span
-                  class="text-sm sm:text-base text-gray-500 dark:text-neutral-500"
+                  class="text-base sm:text-lg text-gray-500 dark:text-neutral-500"
                 >
                   SQLの基礎をハンズオンで学ぶ<span
                     class="font-bold bg-clip-text bg-gradient-to-tr from-blue-600 to-purple-400 text-transparent"
@@ -83,9 +83,9 @@
               </span>
               <div class="grow">
                 <span
-                  class="text-sm sm:text-base text-gray-500 dark:text-neutral-500"
+                  class="text-base sm:text-lg text-gray-500 dark:text-neutral-500"
                 >
-                  マンツーマンでSQLを学ぶ<span
+                  実務のデータ分析でSQLを使えるようにする<span
                     class="font-bold bg-clip-text bg-gradient-to-tr from-blue-600 to-purple-400 text-transparent"
                     >『マンツーマントレーニングプラン』</span
                   >
@@ -122,11 +122,11 @@
             <p class="mr-8 ml-8 text-3xl font-bold bg-clip-text bg-gradient-to-tr from-blue-600 to-purple-400 text-transparent">集合研修プラン</p>
           </div>
           <div class="p-4 md:p-6">
-            <!-- <span
+            <span
               class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500"
             >
-              Atlassian API
-            </span> -->
+              ティーチング
+            </span>
             <h3
               class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white"
             >
@@ -149,18 +149,18 @@
             <p class="mr-8 ml-8 text-3xl font-bold bg-clip-text bg-gradient-to-tr from-blue-600 to-purple-400 text-transparent">マンツーマントレーニングプラン</p>
           </div>
           <div class="p-4 md:p-6">
-            <!-- <span
+            <span
               class="block mb-1 text-xs font-semibold uppercase text-rose-600 dark:text-rose-500"
             >
-              Asana API
-            </span> -->
+              ティーチング + コーチング
+            </span>
             <h3
               class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white"
             >
-              実務のデータ分析でSQLが使えるように学習
+              実務のデータ分析でSQLが使えるレベルに成長
             </h3>
             <p class="mt-3 text-gray-500 dark:text-neutral-500">
-              データ分析で使うSQLをマンツーマンで基礎から応用まで学習。ゼロから3ヶ月で実務でSQLを使えるレベルまで教育。
+              データ分析で使うSQLをマンツーマンで基礎から応用まで学習。ゼロから3ヶ月で実務でSQLを使えるレベルまで成長をサポート。
             </p>
           </div>
         </div>

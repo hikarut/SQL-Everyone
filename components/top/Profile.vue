@@ -47,7 +47,7 @@
       <!-- About -->
       <div class="mt-8">
         <p class="text-sm text-gray-600 dark:text-neutral-400">
-          青山学院大学経営システム工学科卒業。新卒でヤフー株式会社に入社し、Webエンジニアとしてサービスの開発、運用、企画、提案、など幅広くサービスに貢献。
+          2011年に新卒でヤフー株式会社に入社し、Webエンジニアとしてサービスの開発、運用、企画、提案、など幅広くサービスに貢献。
         </p>
 
         <p class="mt-3 text-sm text-gray-600 dark:text-neutral-400">
@@ -122,7 +122,7 @@
         </div>
 
         <div class="grow">
-          <h2 class="text-base font-medium text-gray-800 dark:text-neutral-200">
+          <h2 class="text-base font-medium text-gray-600 dark:text-neutral-200">
             著書：<a href="https://www.amazon.co.jp/dp/4297134438/" target="_blank">データ分析力を高める ビジネスパーソンのためのSQL入門（技術評論社）</a>
           </h2>
         </div>
