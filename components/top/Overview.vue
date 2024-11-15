@@ -150,7 +150,7 @@
           </div>
           <div class="p-4 md:p-6">
             <span
-              class="block mb-1 text-xs font-semibold uppercase text-rose-600 dark:text-rose-500"
+              class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500"
             >
               ティーチング + コーチング
             </span>

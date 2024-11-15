@@ -7,6 +7,7 @@
     <TopDetail />
     <TopProfile />
     <TopPrice />
+    <TopFaq />
     <CommonFooter />
   </div>
 </template>
