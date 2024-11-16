@@ -9,6 +9,14 @@ module.exports = {
     "./app.vue",
     "./error.vue",
   ],
+  theme: {
+    extend: {
+      fontFamily: {
+        // フォントを変える場合は修正（layoutsのリンクも修正）
+        custom: ['Noto Sans JP', 'sans-serif'],
+      },
+    },
+  },
   plugins: [
     require('preline/plugin'),
   ],
