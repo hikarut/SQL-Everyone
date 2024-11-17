@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* グローバルなベーススタイルを定義 */
+@layer base {
+  body {
+    @apply font-custom;
+  }
+}
