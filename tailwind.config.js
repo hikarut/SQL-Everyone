@@ -12,7 +12,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        // フォントを変える場合は修正（layoutsのリンクも修正）
+        // フォントを変える場合は修正（リンクも修正）
         custom: ['Noto Sans JP', 'sans-serif'],
       },
     },

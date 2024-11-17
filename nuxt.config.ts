@@ -14,6 +14,13 @@ export default defineNuxtConfig({
     head: {
       // ページのタイトルやメタタグの設定
       title: 'データ分析内製化に向けた人材育成サービス『SQL Everyone』',
+      link: [
+        { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/sql_icon.png' },
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap',
+        },
+      ],
       // メタタグ
       meta: [
         {
@@ -62,12 +69,6 @@ export default defineNuxtConfig({
           name: 'apple-mobile-web-app-title',
           content: 'データ分析内製化に向けた人材育成サービス『SQL Everyone』',
         },
-      ],
-      link: [
-        // ファビコンの設定
-        // { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-        // PNG形式のファビコンを使用する場合
-        { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/sql_icon.png' },
       ],
     },
   },
