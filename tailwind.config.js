@@ -15,6 +15,9 @@ module.exports = {
         // フォントを変える場合は修正（リンクも修正）
         custom: ['Noto Sans JP', 'sans-serif'],
       },
+      colors: {
+        'custom-blue': '#2988D5',
+      },
     },
   },
   plugins: [
