@@ -38,7 +38,7 @@
             <p class="mb-2">Takahashi Hikaru</p>
           </h1>
           <p class="text-sm text-gray-600 dark:text-neutral-400">
-            元Webエンジニア / デジタルマーケティングコンサルタント / データドリブンコンサルタント
+            デジタルマーケティングコンサルタント / データドリブンコンサルタント
           </p>
         </div>
       </div>
