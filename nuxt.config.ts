@@ -38,7 +38,7 @@ export default defineNuxtConfig({
         {
           hid: 'og:image',
           property: 'og:image',
-          content: `https://sql-everyone.vercel.app/ogimage.png`,
+          content: `https://sql-everyone.com/ogimage.png`,
         },
         {
           hid: 'og:title',
@@ -48,7 +48,7 @@ export default defineNuxtConfig({
         {
           hid: 'og:url',
           property: 'og:url',
-          content: 'https://sql-everyone.vercel.app/',
+          content: 'https://sql-everyone.com/',
         },
         {
           hid: 'og:description',
