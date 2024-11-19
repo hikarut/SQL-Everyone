@@ -14,34 +14,21 @@
           <p class="mt-3 text-gray-600 dark:text-neutral-400">
             ページが見つかりません。
           </p>
-          <div
-            class="mt-5 flex flex-col justify-center items-center gap-2 sm:flex-row sm:gap-3"
-          >
+
+          <!-- Buttons -->
+          <div class="mt-8 gap-3 flex justify-center">
             <NuxtLink
-              class="w-full sm:w-auto py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
+              class="w-64 inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500 border border-transparent text-white text-lg font-bold rounded-full py-3 px-4"
               to="/"
             >
-              <svg
-                class="shrink-0 size-4"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="m15 18-6-6 6-6" />
-              </svg>
               トップページに戻る
             </NuxtLink>
           </div>
+          <!-- End Buttons -->
+
         </div>
       </main>
       <!-- ========== END MAIN CONTENT ========== -->
-
     </div>
     <CommonFooter />
   </div>
