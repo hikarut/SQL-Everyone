@@ -3,13 +3,16 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
+
   plugins: ["~/plugins/preline.client.ts"],
+
   app: {
     head: {
       // ページのタイトルやメタタグの設定
@@ -72,4 +75,10 @@ export default defineNuxtConfig({
       ],
     },
   },
+
+  modules: ['nuxt-gtag'],
+
+  gtag: {
+    id: 'G-R9JV7VBMYE'
+  }
 })

@@ -76,4 +76,6 @@
 
 <script setup>
 import sqlIconImage from "~/public/sql_icon.png";
+
+const { gtag } = useGtag()
 </script>
