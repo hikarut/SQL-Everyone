@@ -19,8 +19,11 @@
           <!-- Title -->
           <div class="space-y-2 md:space-y-4">
             <div class="text-gray-500 dark:text-neutral-500">
-              <p class="mb-3">
+              <p class="mb-5">
                 『SQL Everyone』はデータ分析内製化支援サービスです。
+              </p>
+              <p class="mb-5">
+                データ分析の内製化を進めるための第一歩として『SQL』を学ぶことが最も効率が良いと考えています。
               </p>
               <p>
                 目的・レベルに合わせたSQL分析人材を育成することでデータ分析内製化を支援します。SQLを全く知らない人が受けてもデータ分析で使えるSQLが学べるように、2つのサービスを提供しています。
