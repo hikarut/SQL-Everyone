@@ -2,7 +2,6 @@
   <!-- Features -->
   <!-- <div class="bg-gray-100"> -->
   <div class="relative overflow-hidden">
-
     <!-- Gradients -->
     <div
       aria-hidden="true"
@@ -38,10 +37,6 @@
         </a>
       </div>
 
-      <div class="mt-8 gap-3 flex justify-center text-gray-600">
-        詳細資料については以下からご確認いただけます。
-      </div>
-
       <!-- Buttons -->
       <div class="mt-8 gap-3 flex justify-center">
         <a
@@ -51,12 +46,18 @@
         >
           <svg
             class="shrink-0 w-5 h-5"
+            aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
+            width="24"
+            height="24"
+            fill="none"
             viewBox="0 0 24 24"
           >
             <path
-              d="M9 2C7.89543 2 7 2.89543 7 4V5H5C3.89543 5 3 5.89543 3 7V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V7C21 5.89543 20.1046 5 19 5H17V4C17 2.89543 16.1046 2 15 2H9ZM9 4H15V5H9V4ZM5 7H19V19H5V7ZM7 9V11H17V9H7ZM7 13V15H17V13H7ZM7 17V19H17V17H7Z"
+              stroke="currentColor"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M10 3v4a1 1 0 0 1-1 1H5m14-4v16a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7.914a1 1 0 0 1 .293-.707l3.914-3.914A1 1 0 0 1 9.914 3H18a1 1 0 0 1 1 1Z"
             />
           </svg>
           資料確認
