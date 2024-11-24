@@ -76,7 +76,7 @@
         <div class="mt-10 mb-4 gap-3 flex justify-center">
           <a
             class="w-64 inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500 border border-transparent text-white text-lg font-bold rounded-full py-3 px-4"
-            href="https://speakerdeck.com/hikarut/detafen-xi-li-wogao-merusqlyan-xiu-sabisu-sql-everyone"
+            href="https://techplay.jp/event/965101"
             target="_blank"
           >
             TECH PLAYから参加
@@ -88,7 +88,7 @@
         <div class="mt-10 mb-4 gap-3 flex justify-center">
           <a
             class="w-64 inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500 border border-transparent text-white text-lg font-bold rounded-full py-3 px-4"
-            href="https://speakerdeck.com/hikarut/detafen-xi-li-wogao-merusqlyan-xiu-sabisu-sql-everyone"
+            href="https://sql.connpass.com/event/338106/"
             target="_blank"
           >
             connpassから参加
