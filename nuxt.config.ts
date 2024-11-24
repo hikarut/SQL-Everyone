@@ -76,7 +76,7 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['nuxt-gtag'],
+  modules: ['nuxt-gtag', '@nuxtjs/sitemap'],
 
   gtag: {
     // VercelのProduction,Preview環境のNODE_ENVはproduction
