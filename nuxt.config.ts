@@ -79,6 +79,8 @@ export default defineNuxtConfig({
   modules: ['nuxt-gtag'],
 
   gtag: {
+    // VercelのProduction,Preview環境のNODE_ENVはproduction
+    enabled: process.env.NODE_ENV === 'production',
     id: 'G-R9JV7VBMYE'
   }
 })
