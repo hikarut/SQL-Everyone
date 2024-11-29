@@ -24,6 +24,7 @@
       >
         <div class="md:hidden">
           <button
+            ref="menuToggleButton"
             type="button"
             class="hs-collapse-toggle size-[38px] flex justify-center items-center text-sm font-semibold rounded-xl border border-gray-200 text-black hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:border-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
             id="hs-navbar-hcail-collapse"
@@ -32,6 +33,7 @@
             aria-label="Toggle navigation"
             data-hs-collapse="#hs-navbar-hcail"
           >
+            <!-- アイコン -->
             <svg
               class="hs-collapse-open:hidden shrink-0 size-4"
               xmlns="http://www.w3.org/2000/svg"
@@ -81,6 +83,7 @@
             <NuxtLink
               class="inline-block text-black hover:text-gray-600 focus:outline-none focus:text-gray-600 dark:text-white dark:hover:text-neutral-300 dark:focus:text-neutral-300"
               to="/"
+              @click="closeMenu"
               >トップページ</NuxtLink
             >
           </div>
@@ -89,6 +92,7 @@
               class="inline-block text-black hover:text-gray-600 focus:outline-none focus:text-gray-600 dark:text-white dark:hover:text-neutral-300 dark:focus:text-neutral-300"
               href="https://forms.gle/CFKuJCcG81J5EwVA6"
               target="_blank"
+              @click="closeMenu"
               >お問い合わせ</a
             >
           </div>
@@ -97,6 +101,7 @@
               class="inline-block text-black hover:text-gray-600 focus:outline-none focus:text-gray-600 dark:text-white dark:hover:text-neutral-300 dark:focus:text-neutral-300"
               href="https://speakerdeck.com/hikarut/detafen-xi-li-wogao-merusqlyan-xiu-sabisu-sql-everyone"
               target="_blank"
+              @click="closeMenu"
               >資料詳細</a
             >
           </div>
@@ -104,6 +109,7 @@
             <NuxtLink
               class="inline-block text-black hover:text-gray-600 focus:outline-none focus:text-gray-600 dark:text-white dark:hover:text-neutral-300 dark:focus:text-neutral-300"
               to="/seminar"
+              @click="closeMenu"
               >セミナー</NuxtLink
             >
           </div>
@@ -114,3 +120,15 @@
   </header>
   <!-- ========== END HEADER ========== -->
 </template>
+
+<script setup>
+import { ref } from 'vue'
+
+const menuToggleButton = ref(null)
+
+const closeMenu = () => {
+  if (menuToggleButton.value) {
+    menuToggleButton.value.click()
+  }
+}
+</script>
