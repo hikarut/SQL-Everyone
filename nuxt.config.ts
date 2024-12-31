@@ -30,7 +30,7 @@ export default defineNuxtConfig({
           hid: 'keywords',
           name: 'keywords',
           content:
-            'SQL,SQL研修サービス,ChatGPT,生成AI,データ分析内製化,研修,法人向け,勉強会,データ分析,データサイエンティスト,データアナリスト,データエンジニア,マーケター,営業,ビジネスパーソン',
+            'SQL,SQL研修,SQL研修サービス,ChatGPT,生成AI,データ分析内製化,研修,法人向け,勉強会,データ分析,データサイエンティスト,データアナリスト,データエンジニア,マーケター,営業,ビジネスパーソン',
         },
         {
           hid: 'description',

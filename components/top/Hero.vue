@@ -43,7 +43,7 @@
       <!-- <div class="mt-5 max-w-3xl text-center mx-auto relative z-10"> -->
       <div class="mt-5 max-w-3xl text-center mx-auto">
         <p class="text-lg text-gray-600 dark:text-neutral-400">
-          『全ての人にデータ分析力』をというミッションのもと、データ分析で使うためのSQLを学習することでデータ分析の内製化を支援します。
+          『全ての人にデータ分析力を』というミッションのもと、データ分析で使うためのSQLを学習することでデータ分析の内製化を支援します。
         </p>
       </div>
 
