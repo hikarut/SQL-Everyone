@@ -10,17 +10,17 @@
     <!-- Card Blog -->
     <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
       <!-- Grid -->
-      <div class="grid lg:grid-cols-2 lg:gap-y-16 gap-10">
+      <!-- <div class="grid lg:grid-cols-2 lg:gap-y-16 gap-10"> -->
+      <div class="grid lg:grid-cols-1 lg:gap-y-16 gap-10">
         <!-- Card -->
         <NuxtLink
           v-for="blog in blogs?.contents" :key="blog.id"
           class="group block rounded-xl overflow-hidden focus:outline-none"
-          :to="`/${blog.id}`"
+          :to="`/articles/${blog.id}`"
         >
           <div class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5">
-            <div
-              class="shrink-0 relative rounded-xl overflow-hidden w-full sm:w-56 h-44"
-            >
+            <!-- <div class="shrink-0 relative rounded-xl overflow-hidden w-full sm:w-56 h-44"> -->
+            <div class="shrink-0 relative rounded-xl overflow-hidden w-full sm:w-80 h-60">
               <img
                 class="group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out size-full absolute top-0 start-0 object-cover rounded-xl"
                 :src="blog.eyecatch?.url"
