@@ -95,7 +95,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       fallback: true,
-      // routes: ['/articles/20240106']
+      routes: ['/articles', '/articles/20240106']
     },
   },
 })
