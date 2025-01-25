@@ -22,7 +22,7 @@
           <div class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5">
             <!-- <div class="shrink-0 relative rounded-xl overflow-hidden w-full sm:w-56 h-44"> -->
             <div
-              class="shrink-0 relative rounded-xl overflow-hidden w-full sm:w-80 h-44"
+              class="shrink-0 relative rounded-xl overflow-hidden w-full sm:w-80 h-30"
             >
               <!-- <img
                 class="group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out size-full absolute top-0 start-0 object-cover rounded-xl"
