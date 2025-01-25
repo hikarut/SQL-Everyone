@@ -231,6 +231,13 @@ useHead({
   script: [{ src: "//cdn.iframe.ly/embed.js", async: true }],
 });
 
+// useSeoMeta({
+//   title: data.value?.title,
+//   ogTitle: data.value?.title,
+//   description: data.value?.meta.description,
+//   ogDescription: data.value?.meta.description,
+// })
+
 const showCopiedPopup = ref(false);
 
 function copyUrl() {
