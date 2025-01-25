@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
+  ssr: true,
 
   postcss: {
     plugins: {
@@ -83,10 +84,18 @@ export default defineNuxtConfig({
     enabled: process.env.NODE_ENV === 'production',
     id: 'G-R9JV7VBMYE'
   },
+
   microCMS: {
     // serviceDomain: 'sql-everyone',
     // apiKey: 'IWjuyt7bnyno4XWypuWIosjdoDYaOVqPMhcW',
     serviceDomain: process.env.MICROCMS_SERVICE_DOMAIN,
     apiKey: process.env.MICROCMS_API_KEY,
+  },
+
+  nitro: {
+    prerender: {
+      fallback: true,
+      // routes: ['/articles/20240106']
+    },
   },
 })

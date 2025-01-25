@@ -1,11 +1,11 @@
 <template>
   <!-- Card Blog -->
   <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-    <h2
+    <h1
       class="font-bold text-3xl lg:text-4xl text-gray-800 dark:text-neutral-200 text-center mb-10"
     >
       セミナー・勉強会
-    </h2>
+    </h1>
 
     <p class="mb-8 mt-8 text-center text-gray-800">
       ビジネスパーソン向けにデータ分析で活用するSQLに関する勉強会を実施しています。

@@ -18,9 +18,19 @@ module.exports = {
       colors: {
         'custom-blue': '#2988D5',
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            'h1, h2, h3': {
+              marginTop: '2.25em !important'
+            },
+          }
+        }
+      },
     },
   },
   plugins: [
     require('preline/plugin'),
+    require('@tailwindcss/typography'),
   ],
 }

@@ -113,6 +113,14 @@
               >セミナー</NuxtLink
             >
           </div>
+          <div>
+            <NuxtLink
+              class="inline-block text-black hover:text-gray-600 focus:outline-none focus:text-gray-600 dark:text-white dark:hover:text-neutral-300 dark:focus:text-neutral-300"
+              to="/articles"
+              @click="closeMenu"
+              >記事</NuxtLink
+            >
+          </div>
         </div>
       </div>
       <!-- End Collapse -->

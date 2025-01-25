@@ -4,53 +4,47 @@
     <div class="max-w-2xl">
       <!-- Content -->
       <div class="space-y-5 md:space-y-8">
+      <!-- <div> -->
         <figure>
           <img
             class="w-full object-cover rounded-xl"
-            :src="data.eyecatch?.url"
-            :width="data.eyecatch?.width"
-            :height="data.eyecatch?.height"
+            :src="data?.eyecatch?.url"
+            :width="data?.eyecatch?.width"
+            :height="data?.eyecatch?.height"
             alt=""
           />
         </figure>
 
         <h1
-          class="font-bold text-xl lg:text-4xl text-gray-800 dark:text-neutral-200 text-center mb-10 mt-10"
+          class="font-bold text-xl lg:text-4xl text-gray-800 dark:text-neutral-200 mb-10 mt-10"
         >
-          {{ data.title }}
+          {{ data?.title }}
         </h1>
 
+        <div>
+          <p>{{ data?.createdAt }}</p>
+          <p>{{ data?.updatedAt }}</p>
+        </div>
+
         <div
-          v-html="data.content"
+          v-html="data?.content"
           class="text-lg text-gray-800 dark:text-neutral-200 space-y-6 prose"
         ></div>
 
         <div>
-          <a
-            class="m-1 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 dark:bg-neutral-800 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
-            href="#"
-          >
-            Plan
-          </a>
-          <a
-            class="m-1 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 dark:bg-neutral-800 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
-            href="#"
-          >
-            Web development
-          </a>
-          <a
-            class="m-1 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 dark:bg-neutral-800 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
-            href="#"
-          >
-            Free
-          </a>
-          <a
-            class="m-1 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 dark:bg-neutral-800 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
-            href="#"
-          >
-            Team
-          </a>
+          <div v-if="data?.category?.length">
+            <!-- category の要素を v-for で回す -->
+            <span
+              v-for="cat in data.category"
+              :key="cat.id"
+              class="m-1 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 dark:bg-neutral-800 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+              href="#"
+            >
+              {{ cat.name }}
+            </span>
+          </div>
         </div>
+
       </div>
       <!-- End Content -->
     </div>
@@ -74,7 +68,7 @@ const { data } = await useMicroCMSGetListDetail<Blog>({
   endpoint: "blogs",
   contentId: Array.isArray(params.id) ? params.id[0] : params.id,
 });
-console.log(data.value)
+console.log(data.value);
 
 useHead({
   title:
@@ -87,5 +81,7 @@ useHead({
         "データ分析内製化に向けた人材育成サービス『SQL Everyone』主催のセミナー",
     },
   ],
+  // 埋め込み記事の読み込みに必要
+  script: [{ src: "//cdn.iframe.ly/embed.js", async: true }],
 });
 </script>
