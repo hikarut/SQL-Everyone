@@ -179,7 +179,6 @@
             リンクをコピーしました
           </div>
         </transition>
-
       </div>
       <!-- End Content -->
     </div>
@@ -189,7 +188,7 @@
 
 <script setup lang="ts">
 import type { MicroCMSImage, MicroCMSListContent } from "microcms-js-sdk";
-import { ref } from 'vue'
+import { ref } from "vue";
 
 console.log("blog detail");
 
@@ -206,10 +205,10 @@ const { data } = await useMicroCMSGetListDetail<Blog>({
   contentId: Array.isArray(params.id) ? params.id[0] : params.id,
 });
 console.log(data.value);
+console.log("-----");
 
 useHead({
-  title:
-    "データ分析内製化に向けた人材育成サービス『SQL Everyone』主催のセミナー",
+  title: data.value?.title,
   meta: [
     {
       hid: "og:title",
@@ -217,71 +216,90 @@ useHead({
       content:
         "データ分析内製化に向けた人材育成サービス『SQL Everyone』主催のセミナー",
     },
+    {
+      hid: "keywords",
+      name: "keywords",
+      content: data.value?.meta.keywords,
+    },
+    {
+      hid: "description",
+      name: "description",
+      content: data.value?.meta.description,
+    },
   ],
   // 埋め込み記事の読み込みに必要
   script: [{ src: "//cdn.iframe.ly/embed.js", async: true }],
 });
 
-const showCopiedPopup = ref(false)
+const showCopiedPopup = ref(false);
 
 function copyUrl() {
-  const url = window.location.href
-  navigator.clipboard.writeText(url)
+  const url = window.location.href;
+  navigator.clipboard
+    .writeText(url)
     .then(() => {
       // ポップアップを表示
-      showCopiedPopup.value = true
+      showCopiedPopup.value = true;
 
       // 2秒後に非表示
       setTimeout(() => {
-        showCopiedPopup.value = false
-      }, 2000)
+        showCopiedPopup.value = false;
+      }, 2000);
     })
-    .catch(err => {
-      console.error('URLのコピーに失敗しました: ', err)
-    })
+    .catch((err) => {
+      console.error("URLのコピーに失敗しました: ", err);
+    });
 }
 
 function shareOnX() {
-  const pageUrl = window.location.href
-  const text = data.value.title
+  const pageUrl = window.location.href;
+  const text = data.value.title;
 
   // X(旧Twitter)のシェアIntentを開く
-  const shareUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(pageUrl)}&text=${encodeURIComponent(text)}`
-  
+  const shareUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(
+    pageUrl
+  )}&text=${encodeURIComponent(text)}`;
+
   // 新しいタブで開く
-  window.open(shareUrl, '_blank')
+  window.open(shareUrl, "_blank");
 }
 
 function shareHatena() {
   // 今のページURLを取得
-  const pageUrl = window.location.href
+  const pageUrl = window.location.href;
 
   // はてなブックマークのエントリページを開く
-  const shareUrl = `https://b.hatena.ne.jp/entry?url=${encodeURIComponent(pageUrl)}`
+  const shareUrl = `https://b.hatena.ne.jp/entry?url=${encodeURIComponent(
+    pageUrl
+  )}`;
 
   // 新しいタブで開く
-  window.open(shareUrl, '_blank')
+  window.open(shareUrl, "_blank");
 }
 
 function shareFacebook() {
   // 今のページURLを取得
-  const pageUrl = window.location.href
+  const pageUrl = window.location.href;
 
   // Facebookのシェアページを開くURL
-  const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageUrl)}`
+  const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+    pageUrl
+  )}`;
 
   // 新しいタブで開く
-  window.open(shareUrl, '_blank')
+  window.open(shareUrl, "_blank");
 }
 
 function shareLine() {
   // 今のページURLを取得
-  const pageUrl = window.location.href
+  const pageUrl = window.location.href;
 
   // LINEでシェア
-  const shareUrl = `https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(pageUrl)}`
+  const shareUrl = `https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(
+    pageUrl
+  )}`;
 
   // 新しいタブで開く
-  window.open(shareUrl, '_blank')
+  window.open(shareUrl, "_blank");
 }
 </script>
