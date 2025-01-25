@@ -47,7 +47,7 @@
                 {{ blog.title }}
               </h3>
               <p class="mt-3 text-gray-600 dark:text-neutral-400">
-                {{ blog.publishedAt ?? blog.createdAt }}
+                {{ dateFormat(blog.publishedAt) ?? dateFormat(blog.createdAt) }}
               </p>
               <p
                 v-for="(cat, index) in blog.category"
