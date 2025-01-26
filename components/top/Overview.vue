@@ -18,7 +18,7 @@
         <div class="space-y-6 sm:space-y-8">
           <!-- Title -->
           <div class="space-y-2 md:space-y-4">
-            <div class="text-gray-500 dark:text-neutral-500">
+            <div class="text-gray-800 dark:text-neutral-500">
               <p class="mb-5">
                 『SQL Everyone』はデータ分析内製化支援サービスです。
               </p>
@@ -55,7 +55,7 @@
               </span>
               <div class="grow">
                 <span
-                  class="text-base sm:text-lg text-gray-500 dark:text-neutral-500"
+                  class="text-base sm:text-lg text-gray-800 dark:text-neutral-500"
                 >
                   SQLの基礎をハンズオンで学ぶ<span
                     class="font-bold bg-clip-text bg-gradient-to-tr from-blue-600 to-purple-400 text-transparent"
@@ -86,7 +86,7 @@
               </span>
               <div class="grow">
                 <span
-                  class="text-base sm:text-lg text-gray-500 dark:text-neutral-500"
+                  class="text-base sm:text-lg text-gray-800 dark:text-neutral-500"
                 >
                   実務のデータ分析でSQLを使えるようにする<span
                     class="font-bold bg-clip-text bg-gradient-to-tr from-blue-600 to-purple-400 text-transparent"
@@ -135,7 +135,7 @@
             >
               データ分析で使うSQLの基礎を学習
             </h3>
-            <p class="mt-3 text-gray-500 dark:text-neutral-500">
+            <p class="mt-3 text-gray-600 dark:text-neutral-500">
               ビジネスパーソン向けにSQLの基礎について学習。ハンズオンを交えてデータ分析で使うSQLについて理解を深める研修。
             </p>
           </div>
@@ -162,7 +162,7 @@
             >
               実務のデータ分析でSQLが使えるレベルに成長
             </h3>
-            <p class="mt-3 text-gray-500 dark:text-neutral-500">
+            <p class="mt-3 text-gray-600 dark:text-neutral-500">
               データ分析で使うSQLをマンツーマンで基礎から応用まで学習。ゼロから3ヶ月で実務でSQLを使えるレベルまで成長をサポート。
             </p>
           </div>
