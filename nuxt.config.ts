@@ -80,14 +80,13 @@ export default defineNuxtConfig({
   modules: ['nuxt-gtag', '@nuxtjs/sitemap', 'nuxt-microcms-module'],
 
   gtag: {
-    // VercelのProduction,Preview環境のNODE_ENVはproduction
-    enabled: process.env.NODE_ENV === 'production',
+    // VercelのProduction,Preview環境のNODE_ENVはproduction。なので別の環境変数を用意
+    // enabled: process.env.NODE_ENV === 'production',
+    enabled: process.env.GA_ENV === 'production',
     id: 'G-R9JV7VBMYE'
   },
 
   microCMS: {
-    // serviceDomain: 'sql-everyone',
-    // apiKey: 'IWjuyt7bnyno4XWypuWIosjdoDYaOVqPMhcW',
     serviceDomain: process.env.MICROCMS_SERVICE_DOMAIN,
     apiKey: process.env.MICROCMS_API_KEY,
   },
