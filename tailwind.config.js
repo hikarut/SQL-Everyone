@@ -24,6 +24,18 @@ module.exports = {
             'h1, h2, h3': {
               marginTop: '2.25em !important'
             },
+            h1: {
+              fontSize: '1.5rem',
+            },
+            h2: {
+              fontSize: '1.3rem',
+            },
+            h3: {
+              fontSize: '1.2rem',
+            },
+            'p, ul, ol, table': {
+              fontSize: '1rem',
+            },
           }
         }
       },

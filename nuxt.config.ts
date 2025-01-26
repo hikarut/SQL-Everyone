@@ -95,15 +95,15 @@ export default defineNuxtConfig({
   nitro: {
     static: true,
     prerender: {
-      fallback: true,
+      // fallback: true,
       // 静的ファイル化したいページ
-      routes: [
-        '/', 
-        '/articles', 
-        '/seminar', 
-        '/articles/20240106',
-        '/articles/20241218',
-      ]
+      // routes: [
+      //   '/', 
+      //   '/articles', 
+      //   '/seminar', 
+      //   '/articles/20240106',
+      //   '/articles/20241218',
+      // ]
     },
   },
 })
