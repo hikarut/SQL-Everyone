@@ -95,7 +95,7 @@ export default defineNuxtConfig({
   nitro: {
     static: true,
     prerender: {
-      // fallback: true,
+      fallback: true,
       // 静的ファイル化したいページ
       // routes: [
       //   '/', 
