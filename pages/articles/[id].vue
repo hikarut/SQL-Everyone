@@ -52,7 +52,7 @@
         <div class="flex items-center gap-4 mt-2">
           <!-- リンクをコピー -->
           <a
-            href="#"
+            href=""
             class="inline-flex items-center text-gray-600 dark:text-neutral-400 hover:text-blue-500"
             title="リンクをコピー"
             @click.prevent="copyUrl"
@@ -78,7 +78,7 @@
 
           <!-- X(旧Twitter)でシェア -->
           <a
-            href="#"
+            href=""
             class="inline-flex items-center text-gray-600 dark:text-neutral-400 hover:text-blue-500"
             title="Xでシェア"
             @click.prevent="shareOnX"
@@ -101,7 +101,7 @@
 
           <!-- はてなブックマークでシェア -->
           <a
-            href="#"
+            href=""
             class="inline-flex items-center text-gray-600 dark:text-neutral-400 hover:text-blue-500"
             title="はてブでシェア"
             @click.prevent="shareHatena"
@@ -123,7 +123,7 @@
 
           <!-- Facebookでシェア -->
           <a
-            href="#"
+            href=""
             class="inline-flex items-center text-gray-600 dark:text-neutral-400 hover:text-blue-500"
             title="Facebookでシェア"
             @click.prevent="shareFacebook"
@@ -148,7 +148,7 @@
 
           <!-- LINEでシェア -->
           <a
-            href="#"
+            href=""
             class="inline-flex items-center text-gray-600 dark:text-neutral-400 hover:text-blue-500"
             title="LINEでシェア"
             @click.prevent="shareLine"
@@ -187,126 +187,147 @@
 </template>
 
 <script setup lang="ts">
-import type { MicroCMSImage, MicroCMSListContent } from "microcms-js-sdk";
-import { ref } from "vue";
+import type { MicroCMSImage, MicroCMSListContent } from "microcms-js-sdk"
+import { ref } from "vue"
 
-console.log("blog detail");
+console.log("blog detail")
 
-const { params } = useRoute();
+const { params } = useRoute()
 
 export type Blog = {
-  title?: string;
-  content?: string;
-  eyecatch?: MicroCMSImage;
-};
+  title?: string
+  content?: string
+  eyecatch?: MicroCMSImage
+}
 
 const { data } = await useMicroCMSGetListDetail<Blog>({
   endpoint: "blogs",
   contentId: Array.isArray(params.id) ? params.id[0] : params.id,
-});
-console.log(data.value);
-console.log("-----");
+})
+console.log(data.value)
+console.log("-----")
 
-useHead({
-  title: data.value?.title,
-  meta: [
-    {
-      hid: "og:title",
-      property: "og:title",
-      content:
-        "データ分析内製化に向けた人材育成サービス『SQL Everyone』主催のセミナー",
-    },
-    {
-      hid: "keywords",
-      name: "keywords",
-      content: data.value?.meta.keywords,
-    },
-    {
-      hid: "description",
-      name: "description",
-      content: data.value?.meta.description,
-    },
-  ],
-  // 埋め込み記事の読み込みに必要
-  script: [{ src: "//cdn.iframe.ly/embed.js", async: true }],
-});
-
-// useSeoMeta({
-//   title: data.value?.title,
-//   ogTitle: data.value?.title,
-//   description: data.value?.meta.description,
-//   ogDescription: data.value?.meta.description,
-// })
-
-const showCopiedPopup = ref(false);
+const showCopiedPopup = ref(false)
 
 function copyUrl() {
-  const url = window.location.href;
+  const url = window.location.href
   navigator.clipboard
     .writeText(url)
     .then(() => {
       // ポップアップを表示
-      showCopiedPopup.value = true;
+      showCopiedPopup.value = true
 
       // 2秒後に非表示
       setTimeout(() => {
-        showCopiedPopup.value = false;
-      }, 2000);
+        showCopiedPopup.value = false
+      }, 2000)
     })
     .catch((err) => {
-      console.error("URLのコピーに失敗しました: ", err);
-    });
+      console.error("URLのコピーに失敗しました: ", err)
+    })
 }
 
 function shareOnX() {
-  const pageUrl = window.location.href;
-  const text = data.value.title;
+  const pageUrl = window.location.href
+  const text = data.value.title
 
   // X(旧Twitter)のシェアIntentを開く
   const shareUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(
     pageUrl
-  )}&text=${encodeURIComponent(text)}`;
+  )}&text=${encodeURIComponent(text)}`
 
   // 新しいタブで開く
-  window.open(shareUrl, "_blank");
+  window.open(shareUrl, "_blank")
 }
 
 function shareHatena() {
   // 今のページURLを取得
-  const pageUrl = window.location.href;
+  const pageUrl = window.location.href
 
   // はてなブックマークのエントリページを開く
   const shareUrl = `https://b.hatena.ne.jp/entry?url=${encodeURIComponent(
     pageUrl
-  )}`;
+  )}`
 
   // 新しいタブで開く
-  window.open(shareUrl, "_blank");
+  window.open(shareUrl, "_blank")
 }
 
 function shareFacebook() {
   // 今のページURLを取得
-  const pageUrl = window.location.href;
+  const pageUrl = window.location.href
 
   // Facebookのシェアページを開くURL
   const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
     pageUrl
-  )}`;
+  )}`
 
   // 新しいタブで開く
-  window.open(shareUrl, "_blank");
+  window.open(shareUrl, "_blank")
 }
 
 function shareLine() {
   // 今のページURLを取得
-  const pageUrl = window.location.href;
+  const pageUrl = window.location.href
 
   // LINEでシェア
   const shareUrl = `https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(
     pageUrl
-  )}`;
+  )}`
 
   // 新しいタブで開く
-  window.open(shareUrl, "_blank");
+  window.open(shareUrl, "_blank")
 }
+
+const title = data.value?.title
+const description = data.value?.meta.description
+const keywords = data.value?.meta.keywords
+const url = `https://sql-everyone.com/articles/${params.id}`
+const img = data.value?.eyecatch.url
+useHead({
+  title: title,
+  // メタタグ
+  meta: [
+    {
+      hid: "description",
+      name: "description",
+      content: description,
+    },
+    {
+      hid: "keywords",
+      name: "keywords",
+      content: keywords,
+    },
+    {
+      hid: "og:title",
+      property: "og:title",
+      content: title,
+    },
+    {
+      hid: "og:url",
+      property: "og:url",
+      content: url,
+    },
+    {
+      hid: "og:description",
+      property: "og:description",
+      content: description,
+    },
+    {
+      hid: "og:image",
+      property: "og:image",
+      content: img,
+    },
+    {
+      name: "application-name",
+      content: title,
+    },
+    {
+      name: "apple-mobile-web-app-title",
+      content: title,
+    },
+  ],
+  // 埋め込み記事の読み込みに必要
+  script: [{ src: "//cdn.iframe.ly/embed.js", async: true }],
+})
 </script>
