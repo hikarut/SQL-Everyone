@@ -170,9 +170,11 @@
           </a>
         </div>
         <!-- SNSシェアボタン -->
+        
+        <div class="border-t border-gray-200 my-4"></div>
 
         <!-- Card Section -->
-        <div class="max-w-5xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+        <div class="max-w-5xl px-4 py-4 sm:px-6 lg:px-4 lg:py-4 mx-auto">
           <!-- Grid -->
           <div class="grid sm:grid-cols-2 lg:grid-cols-2 gap-3 sm:gap-6">
             <!-- Card -->
@@ -253,6 +255,135 @@
         </div>
         <!-- End Card Section -->
 
+
+
+    <!-- Card Blog -->
+    <!-- <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto border rounded-lg"> -->
+    <!-- <div class="max-w-[85rem] px-2 py-6 sm:px-2 lg:px-6 lg:py-6 mx-auto border rounded-lg"> -->
+    <div class="max-w-[85rem] px-2 py-6 sm:px-2 lg:px-6 lg:py-6 mx-auto">
+      <p class="block font-bold text-gray-800 text-2xl md:text-2xl lg:text-2xl dark:text-neutral-200 text-center mb-5 font-bold bg-clip-text bg-gradient-to-tr from-blue-600 to-purple-400 text-transparent">データ分析内製化に向けた人材育成（SQL研修）サービス</p>
+      <!-- Grid -->
+      <div class="grid lg:grid-cols-1 lg:gap-y-16 gap-10">
+        <!-- Card -->
+        <NuxtLink
+          class="group block rounded-xl overflow-hidden focus:outline-none"
+          to="/"
+        >
+          <div class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-3">
+            <div
+              class="shrink-0 relative rounded-xl overflow-hidden w-full sm:w-80 h-30"
+            >
+              <img
+                class="w-full object-cover rounded-xl"
+                src="https://sql-everyone.com/ogimage.png"
+                alt=""
+              />
+            </div>
+
+            <div class="grow">
+              <li class="flex gap-x-3 mt-3">
+              <span
+                class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500"
+              >
+                <svg
+                  class="shrink-0 size-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+              </span>
+              <div class="grow">
+                <span class="text-gray-600 dark:text-neutral-500">
+                  実務でSQLを使うための『マンツーマントレーニングプラン』あり
+                </span>
+              </div>
+            </li>
+
+              <li class="flex gap-x-3 mt-3">
+              <span
+                class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500"
+              >
+                <svg
+                  class="shrink-0 size-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+              </span>
+              <div class="grow">
+                <span class="text-gray-600 dark:text-neutral-500">
+                  ハンズオン形式で学習の仕方をサポート
+                </span>
+              </div>
+            </li>
+
+
+
+
+
+            </div>
+          </div>
+        </NuxtLink>
+        <!-- End Card -->
+      </div>
+
+      <div class="mt-8 gap-3 flex justify-center">
+        <a
+          class="w-64 inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500 border border-transparent text-white text-lg font-bold rounded-full py-3 px-4"
+          href="https://forms.gle/CFKuJCcG81J5EwVA6"
+          target="_blank"
+        >
+          詳細を確認
+        </a>
+      </div>
+      <div class="mt-8 gap-3 flex justify-center">
+        <a
+          class="w-64 inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500 border border-transparent text-white text-lg font-bold rounded-full py-3 px-4"
+          href="https://forms.gle/CFKuJCcG81J5EwVA6"
+          target="_blank"
+        >
+          無料でお問い合わせ
+        </a>
+      </div>
+
+    </div>
+    <!-- End Card Blog -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <transition name="fade">
           <div
             v-if="showCopiedPopup"
@@ -264,13 +395,50 @@
       </div>
       <!-- End Content -->
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </div>
   <!-- End Blog Article -->
+
+
+
+
+
+
+
+
 </template>
 
 <script setup lang="ts">
 import type { MicroCMSImage, MicroCMSListContent } from "microcms-js-sdk"
 import { ref } from "vue"
+import sqlIconImage from "~/public/sql_icon.png"
 
 console.log("blog detail")
 
