@@ -117,6 +117,7 @@
           <img
             class="w-32 mx-auto"
             :src="bookImage"
+            alt="データ分析力を高める ビジネスパーソンのためのSQL入門（技術評論社）"
           />
           </a>
         </div>

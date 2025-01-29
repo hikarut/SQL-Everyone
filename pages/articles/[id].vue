@@ -49,7 +49,7 @@
         ></div>
 
         <!-- SNSシェアボタンを追加 -->
-        <div class="flex items-center gap-4 mt-2">
+        <div class="flex items-center gap-4 mt-2 pt-4 pb-4">
           <!-- リンクをコピー -->
           <a
             href=""
@@ -170,7 +170,7 @@
           </a>
         </div>
         <!-- SNSシェアボタン -->
-        
+
         <div class="border-t border-gray-200 my-4"></div>
 
         <!-- Card Section -->
@@ -255,134 +255,240 @@
         </div>
         <!-- End Card Section -->
 
-
-
-    <!-- Card Blog -->
-    <!-- <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto border rounded-lg"> -->
-    <!-- <div class="max-w-[85rem] px-2 py-6 sm:px-2 lg:px-6 lg:py-6 mx-auto border rounded-lg"> -->
-    <div class="max-w-[85rem] px-2 py-6 sm:px-2 lg:px-6 lg:py-6 mx-auto">
-      <p class="block font-bold text-gray-800 text-2xl md:text-2xl lg:text-2xl dark:text-neutral-200 text-center mb-5 font-bold bg-clip-text bg-gradient-to-tr from-blue-600 to-purple-400 text-transparent">データ分析内製化に向けた人材育成（SQL研修）サービス</p>
-      <!-- Grid -->
-      <div class="grid lg:grid-cols-1 lg:gap-y-16 gap-10">
-        <!-- Card -->
-        <NuxtLink
-          class="group block rounded-xl overflow-hidden focus:outline-none"
-          to="/"
-        >
-          <div class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-3">
+        <!-- Card Blog -->
+        <div class="max-w-[85rem] px-4 py-5 sm:px-6 lg:px-8 lg:py-7 mx-auto">
+          <!-- Grid -->
+          <div class="grid sm:grid-cols-1 lg:grid-cols-1 gap-6">
+            <!-- Card 1 -->
             <div
-              class="shrink-0 relative rounded-xl overflow-hidden w-full sm:w-80 h-30"
+              class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70"
             >
-              <img
-                class="w-full object-cover rounded-xl"
-                src="https://sql-everyone.com/ogimage.png"
-                alt=""
-              />
-            </div>
-
-            <div class="grow">
-              <li class="flex gap-x-3 mt-3">
-              <span
-                class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500"
-              >
-                <svg
-                  class="shrink-0 size-5"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-              </span>
-              <div class="grow">
-                <span class="text-gray-600 dark:text-neutral-500">
-                  実務でSQLを使うための『マンツーマントレーニングプラン』あり
-                </span>
+              <!-- <div class="h-52 flex flex-col justify-center items-center rounded-t-xl"> -->
+              <!-- <div class="h-52 flex flex-col justify-center items-center rounded-t-xl overflow-hidden"> -->
+              <div class="rounded-t-xl overflow-hidden">
+                <img
+                  class="w-full h-auto object-cover"
+                  alt="SQL Everyone"
+                  src="https://sql-everyone.com/ogimage.png"
+                />
               </div>
-            </li>
 
-              <li class="flex gap-x-3 mt-3">
-              <span
-                class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500"
-              >
-                <svg
-                  class="shrink-0 size-5"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+              <div class="p-4 md:p-6">
+                <span
+                  class="block mb-1 font-semibold dark:text-rose-500 bg-clip-text bg-gradient-to-tr from-blue-600 to-purple-400 text-transparent text-center"
                 >
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-              </span>
-              <div class="grow">
-                <span class="text-gray-600 dark:text-neutral-500">
-                  ハンズオン形式で学習の仕方をサポート
+                  SQL Everyone
                 </span>
+                <li class="flex gap-x-3 mt-3">
+                  <span
+                    class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500"
+                  >
+                    <svg
+                      class="shrink-0 size-5"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                  </span>
+                  <div class="grow">
+                    <span class="text-gray-600 dark:text-neutral-500">
+                      法人向けのデータ分析内製化支援サービス（SQL研修サービス）
+                    </span>
+                  </div>
+                </li>
+                <li class="flex gap-x-3 mt-3">
+                  <span
+                    class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500"
+                  >
+                    <svg
+                      class="shrink-0 size-5"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                  </span>
+                  <div class="grow">
+                    <span class="text-gray-600 dark:text-neutral-500">
+                      実務でSQLを使うための『マンツーマントレーニングプラン』あり
+                    </span>
+                  </div>
+                </li>
+                <li class="flex gap-x-3 mt-3">
+                  <span
+                    class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500"
+                  >
+                    <svg
+                      class="shrink-0 size-5"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                  </span>
+                  <div class="grow">
+                    <span class="text-gray-600 dark:text-neutral-500">
+                      ハンズオン形式で学習の仕方をサポート
+                    </span>
+                  </div>
+                </li>
               </div>
-            </li>
-
-
-
-
-
+              <div
+                class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700"
+              >
+                <NuxtLink
+                  class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 text-white font-bold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500 disabled:opacity-50 disabled:pointer-events-none dark:border-neutral-700"
+                  to="/"
+                >
+                  詳細を確認
+                </NuxtLink>
+                <a
+                  class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 text-white font-bold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500 disabled:opacity-50 disabled:pointer-events-none dark:border-neutral-700"
+                  href="https://forms.gle/CFKuJCcG81J5EwVA6"
+                  target="_blank"
+                >
+                  無料で問い合わせ
+                </a>
+              </div>
             </div>
+            <!-- End Card 1 -->
+
+            <!-- Card 2 -->
+            <div
+              class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70"
+            >
+              <!-- // 修正後: SVGを削除し、画像を挿入 -->
+              <div
+                class="h-52 flex flex-col justify-center items-center rounded-t-xl"
+              >
+                <img
+                  class="h-44"
+                  alt="データ分析力を高める ビジネスパーソンのためのSQL入門（技術評論社）"
+                  :src="bookImage"
+                />
+              </div>
+
+              <div class="p-4 md:p-6">
+                <span
+                  class="block mb-1 font-semibold dark:text-rose-500 bg-clip-text bg-gradient-to-tr from-blue-600 to-purple-400 text-transparent text-center"
+                >
+                  データ分析力を高める ビジネスパーソンのためのSQL入門
+                </span>
+                <li class="flex gap-x-3 mt-3">
+                  <span
+                    class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500"
+                  >
+                    <svg
+                      class="shrink-0 size-5"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                  </span>
+                  <div class="grow">
+                    <span class="text-gray-600 dark:text-neutral-500">
+                      ビジネスパーソン向けデータ分析のためのSQL入門書
+                    </span>
+                  </div>
+                </li>
+                <li class="flex gap-x-3 mt-3">
+                  <span
+                    class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500"
+                  >
+                    <svg
+                      class="shrink-0 size-5"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                  </span>
+                  <div class="grow">
+                    <span class="text-gray-600 dark:text-neutral-500">
+                      データ分析で使うSQLについて必要最小限で最短で学べる本
+                    </span>
+                  </div>
+                </li>
+                <li class="flex gap-x-3 mt-3">
+                  <span
+                    class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500"
+                  >
+                    <svg
+                      class="shrink-0 size-5"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                  </span>
+                  <div class="grow">
+                    <span class="text-gray-600 dark:text-neutral-500">
+                      ハンズオン形式でゼロから実践で使えるSQLが学べる
+                    </span>
+                  </div>
+                </li>
+              </div>
+              <div
+                class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700"
+              >
+                <a
+                  class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 text-white font-bold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500 disabled:opacity-50 disabled:pointer-events-none dark:border-neutral-700"
+                  href="https://www.amazon.co.jp/dp/4297134438/"
+                  target="_blank"
+                >
+                  詳細を確認
+                </a>
+              </div>
+            </div>
+            <!-- End Card 2 -->
           </div>
-        </NuxtLink>
-        <!-- End Card -->
-      </div>
-
-      <div class="mt-8 gap-3 flex justify-center">
-        <a
-          class="w-64 inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500 border border-transparent text-white text-lg font-bold rounded-full py-3 px-4"
-          href="https://forms.gle/CFKuJCcG81J5EwVA6"
-          target="_blank"
-        >
-          詳細を確認
-        </a>
-      </div>
-      <div class="mt-8 gap-3 flex justify-center">
-        <a
-          class="w-64 inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500 border border-transparent text-white text-lg font-bold rounded-full py-3 px-4"
-          href="https://forms.gle/CFKuJCcG81J5EwVA6"
-          target="_blank"
-        >
-          無料でお問い合わせ
-        </a>
-      </div>
-
-    </div>
-    <!-- End Card Blog -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+          <!-- End Grid -->
+        </div>
+        <!-- End Card Blog -->
 
         <transition name="fade">
           <div
@@ -395,50 +501,15 @@
       </div>
       <!-- End Content -->
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   </div>
   <!-- End Blog Article -->
-
-
-
-
-
-
-
-
 </template>
 
 <script setup lang="ts">
 import type { MicroCMSImage, MicroCMSListContent } from "microcms-js-sdk"
 import { ref } from "vue"
 import sqlIconImage from "~/public/sql_icon.png"
+import bookImage from "~/assets/images/book.jpg"
 
 console.log("blog detail")
 
