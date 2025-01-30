@@ -82,9 +82,6 @@ const { data: blogs } = await useMicroCMSGetList<Blog>({
     ],
   },
 })
-console.log("----blogs----")
-console.log(blogs.value)
-console.log("----blogs----")
 
 const title = 'SQL Everyone 記事一覧'
 const description = 'SQLやデータ分析に関する記事やイベントの情報など発信しています'

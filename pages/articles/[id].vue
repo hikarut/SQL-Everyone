@@ -508,10 +508,7 @@
 <script setup lang="ts">
 import type { MicroCMSImage, MicroCMSListContent } from "microcms-js-sdk"
 import { ref } from "vue"
-import sqlIconImage from "~/public/sql_icon.png"
 import bookImage from "~/assets/images/book.jpg"
-
-console.log("blog detail")
 
 const { params } = useRoute()
 
@@ -525,8 +522,9 @@ const { data } = await useMicroCMSGetListDetail<Blog>({
   endpoint: "blogs",
   contentId: Array.isArray(params.id) ? params.id[0] : params.id,
 })
-console.log(data.value)
-console.log("-----")
+if (!data.value) {
+  throw createError({ statusCode: 404, statusMessage: "Page Not Found" })
+}
 
 const showCopiedPopup = ref(false)
 
@@ -544,7 +542,7 @@ function copyUrl() {
       }, 2000)
     })
     .catch((err) => {
-      console.error("URLのコピーに失敗しました: ", err)
+      // エラー
     })
 }
 

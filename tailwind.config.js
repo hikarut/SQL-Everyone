@@ -33,7 +33,7 @@ module.exports = {
             h3: {
               fontSize: '1.2rem',
             },
-            'p, ul, ol, table': {
+            'p, ul, ol, table, code, pre': {
               fontSize: '1rem',
             },
           }
