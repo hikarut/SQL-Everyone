@@ -160,6 +160,7 @@ const { data: blogs } = await useMicroCMSGetList<Blog>({
       "publishedAt",
       "category",
     ],
+    orders: "-publishedAt", // 作成日が遅い順に並び替え（降順）
   },
 })
 

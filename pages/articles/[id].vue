@@ -38,7 +38,7 @@
             class="shrink-0 text-sm text-gray-600 dark:text-neutral-400 text-right"
           >
             <div>
-              {{ dateFormat(data?.createdAt) }}
+              {{ dateFormat(data?.publishedAt) }}
             </div>
           </div>
         </div>
@@ -509,6 +509,7 @@
 import type { MicroCMSImage, MicroCMSListContent } from "microcms-js-sdk"
 import { ref } from "vue"
 import bookImage from "~/assets/images/book.jpg"
+import { createError } from "#app"
 
 const { params } = useRoute()
 
@@ -518,12 +519,15 @@ export type Blog = {
   eyecatch?: MicroCMSImage
 }
 
-const { data } = await useMicroCMSGetListDetail<Blog>({
+const { data, error } = await useMicroCMSGetListDetail<Blog>({
   endpoint: "blogs",
   contentId: Array.isArray(params.id) ? params.id[0] : params.id,
 })
-if (!data.value) {
-  throw createError({ statusCode: 404, statusMessage: "Page Not Found" })
+// microCMSからのエラーを確認
+if (error.value) {
+  if (error.value.statusCode === 404) {
+    throw createError({ statusCode: 404, statusMessage: "Page Not Found" })
+  }
 }
 
 const showCopiedPopup = ref(false)

@@ -38,7 +38,8 @@
                 {{ blog.title }}
               </h3>
               <p class="mt-3 text-gray-600 dark:text-neutral-400">
-                {{ dateFormat(blog.publishedAt) ?? dateFormat(blog.createdAt) }}
+                <!-- {{ dateFormat(blog.publishedAt) ?? dateFormat(blog.createdAt) }} -->
+                {{ dateFormat(blog.publishedAt) }}
               </p>
               <p
                 v-for="(cat, index) in blog.category"
@@ -80,6 +81,7 @@ const { data: blogs } = await useMicroCMSGetList<Blog>({
       "publishedAt",
       "category",
     ],
+    orders: "-publishedAt", // 作成日が遅い順に並び替え（降順）
   },
 })
 
