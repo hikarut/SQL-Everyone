@@ -97,10 +97,10 @@ export default defineNuxtConfig({
       fallback: "404.html",
       // fallback: false,
       // 静的ファイル化したいページ
-      routes: [
-        '/articles/seminar-20230724',
-        '/articles/seminar-20241218',
-      ]
+      // routes: [
+      //   '/articles/seminar-20230724',
+      //   '/articles/seminar-20241218',
+      // ]
     },
   },
 })
