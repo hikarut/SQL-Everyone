@@ -126,5 +126,7 @@ useHead({
 definePageMeta({
   // "静的生成されていないIDでは 404 とする" オプション
   dynamic: "error",
+  dynamicParams: false,
+  prerender: true,
 })
 </script>
