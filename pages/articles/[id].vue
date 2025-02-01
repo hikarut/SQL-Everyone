@@ -519,7 +519,6 @@ export type Blog = {
   eyecatch?: MicroCMSImage
 }
 
-// const { data, error } = await useMicroCMSGetListDetail<Blog>({
 const { data, error } = await useMicroCMSGetListDetail<Blog>({
   endpoint: "blogs",
   contentId: Array.isArray(params.id) ? params.id[0] : params.id,
@@ -533,7 +532,6 @@ const { data, error } = await useMicroCMSGetListDetail<Blog>({
 // データが存在しない場合、404エラーを投げる
 // nuxt buildの時はこれがあるとリロードで404になってしまう
 if (!data.value) {
-  console.log(1111111)
   throw createError({ statusCode: 404, statusMessage: "Page Not Found" })
 }
 
