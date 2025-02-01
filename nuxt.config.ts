@@ -100,7 +100,6 @@ export default defineNuxtConfig({
       routes: [
         '/articles/seminar-20230724',
         '/articles/seminar-20241218',
-        '/404'
       ]
     },
   },

@@ -523,11 +523,15 @@ const { data, error } = await useMicroCMSGetListDetail<Blog>({
   endpoint: "blogs",
   contentId: Array.isArray(params.id) ? params.id[0] : params.id,
 })
-// microCMSからのエラーを確認
+// SSGの場合
 if (error.value) {
   if (error.value.statusCode === 404) {
     throw createError({ statusCode: 404, statusMessage: "Page Not Found" })
   }
+}
+// データが存在しない場合、404エラーを投げる
+if (!data.value) {
+  throw createError({ statusCode: 404, statusMessage: "Page Not Found" })
 }
 
 const showCopiedPopup = ref(false)
