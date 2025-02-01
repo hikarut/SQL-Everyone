@@ -95,7 +95,7 @@ export default defineNuxtConfig({
     static: true,
     prerender: {
       fallback: "404.html",
-      // fallback: true,p
+      // fallback: true,
       // 静的ファイル化したいページ
       routes: [
         '/articles/seminar-20230724',
