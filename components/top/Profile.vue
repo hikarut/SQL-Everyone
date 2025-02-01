@@ -37,7 +37,7 @@
             <p>高橋 光</p>
             <p class="mb-2">Takahashi Hikaru</p>
           </h1>
-          <p class="text-sm text-gray-600 dark:text-neutral-400">
+          <p class="text-sm text-gray-800">
             デジタルマーケティングコンサルタント / データドリブンコンサルタント
           </p>
         </div>
@@ -45,17 +45,17 @@
       <!-- End Profile -->
 
       <!-- About -->
-      <div class="mt-8">
-        <p class="text-sm text-gray-600 dark:text-neutral-400">
+      <div class="mt-8 text-gray-800">
+        <p class="text-sm">
           2011年に新卒でヤフー株式会社に入社し、Webエンジニアとしてサービスの開発、運用、企画、提案、など幅広くサービスに貢献。
         </p>
 
-        <p class="mt-3 text-sm text-gray-600 dark:text-neutral-400">
+        <p class="mt-3 text-sm">
           2016年からは株式会社イーブックイニシアティブジャパンに出向し、社内でデータサイエンスグループを立ち上げ部長として社内のデータ活用を促進。
           マーケティング施策の効果検証、事業分析、プロダクトのABテストなどデータを活用した意思決定に貢献。チームメンバーのSQLスキルアップや社内全体でのSQL勉強会などのデータ活用スキルアップ活動なども行い、組織全体をデータドリブンにする活動を実施。
         </p>
 
-        <p class="mt-3 text-sm text-gray-600 dark:text-neutral-400">
+        <p class="mt-3 text-sm">
           2021年から外資系コンサルティング企業に入社し、SQLを使ったデータ分析などデータを活用したマーケティング支援を実施。
           また複業として複数社でSQLを活用したデータ分析のサポート経験あり。
         </p>
@@ -117,6 +117,7 @@
           <img
             class="w-32 mx-auto"
             :src="bookImage"
+            alt="データ分析力を高める ビジネスパーソンのためのSQL入門（技術評論社）"
           />
           </a>
         </div>

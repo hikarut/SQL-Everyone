@@ -1,11 +1,11 @@
 <template>
   <!-- Card Blog -->
   <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-    <h2
+    <h1
       class="font-bold text-3xl lg:text-4xl text-gray-800 dark:text-neutral-200 text-center mb-10"
     >
       セミナー・勉強会
-    </h2>
+    </h1>
 
     <p class="mb-8 mt-8 text-center text-gray-800">
       ビジネスパーソン向けにデータ分析で活用するSQLに関する勉強会を実施しています。
@@ -112,42 +112,93 @@
     </div>
     <!-- End Grid -->
 
-    <h3
-      class="font-bold text-xl lg:text-4xl text-gray-800 dark:text-neutral-200 text-center mb-10 mt-10"
+    <h2
+      class="font-bold text-xl lg:text-4xl text-gray-800 dark:text-neutral-200 text-center mb-10 mt-20"
     >
       開催情報
-    </h3>
-    <!-- List -->
+    </h2>
     <ul class="space-y-10">
-      <li>
+      <li v-for="blog in blogs?.contents" :key="blog.id">
+        <!-- 日付は publishedAt を単純表示 (お好みでフォーマット) -->
         <p class="mb-2 text-gray-500 dark:text-neutral-500">
-          2024年12月18日（水）
+          {{ dateFormat(blog.publishedAt) }}
         </p>
+        <!-- NuxtLinkで個別ページへ飛ぶ想定 -->
         <NuxtLink
           class="text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:outline-none focus:decoration-2 dark:text-neutral-500 dark:hover:text-neutral-400"
-          to="/seminar/20241218"
+          :to="`/articles/${blog.id}`"
         >
           <h5 class="font-medium text-gray-800 dark:text-neutral-200">
-            データ分析内製化に向けた人材育成サービス『SQL
-            Everyone』のご紹介【SQL勉強会 #6】
+            {{ blog.title }}
           </h5>
         </NuxtLink>
       </li>
     </ul>
-    <!-- End List -->
   </div>
   <!-- End Card Blog -->
 </template>
 
 <script setup lang="ts">
-  useHead({
-    title: 'データ分析内製化に向けた人材育成サービス『SQL Everyone』主催のセミナー',
-      meta: [
-        {
-          hid: 'og:title',
-          property: 'og:title',
-          content: 'データ分析内製化に向けた人材育成サービス『SQL Everyone』主催のセミナー',
-        },
-      ],
-  })
+import type { MicroCMSImage } from "microcms-js-sdk"
+
+type Blog = {
+  title: string;
+  eyecatch: MicroCMSImage;
+}
+
+const { data: blogs } = await useMicroCMSGetList<Blog>({
+  endpoint: "blogs",
+  queries: {
+    // セミナー情報だけ取得
+    filters: "category[contains]seminar", // カテゴリのIDを指定
+    fields: [
+      "id",
+      "title",
+      "eyecatch",
+      "createdAt",
+      "updatedAt",
+      "publishedAt",
+      "category",
+    ],
+    orders: "-publishedAt", // 作成日が遅い順に並び替え（降順）
+  },
+})
+
+const title = 'データ分析内製化に向けた人材育成サービス『SQL Everyone』主催のセミナー'
+const description = 'ビジネスパーソン向けにデータ分析で活用するSQLに関する勉強会を実施しています'
+const url = 'https://sql-everyone.com/seminar'
+useHead({
+  title: title,
+  // メタタグ
+  meta: [
+    {
+      hid: "description",
+      name: "description",
+      content: description,
+    },
+    {
+      hid: "og:title",
+      property: "og:title",
+      content: title,
+    },
+    {
+      hid: "og:url",
+      property: "og:url",
+      content: url,
+    },
+    {
+      hid: "og:description",
+      property: "og:description",
+      content: description,
+    },
+    {
+      name: "application-name",
+      content: title,
+    },
+    {
+      name: "apple-mobile-web-app-title",
+      content: title,
+    },
+  ],
+})
 </script>

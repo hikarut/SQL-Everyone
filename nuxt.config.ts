@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
+  ssr: true,
 
   postcss: {
     plugins: {
@@ -76,11 +77,30 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['nuxt-gtag', '@nuxtjs/sitemap'],
+  modules: ['nuxt-gtag', '@nuxtjs/sitemap', 'nuxt-microcms-module'],
 
   gtag: {
-    // VercelのProduction,Preview環境のNODE_ENVはproduction
-    enabled: process.env.NODE_ENV === 'production',
+    // VercelのProduction,Preview環境のNODE_ENVはproduction。なので別の環境変数を用意
+    // enabled: process.env.NODE_ENV === 'production',
+    enabled: process.env.GA_ENV === 'production',
     id: 'G-R9JV7VBMYE'
-  }
+  },
+
+  microCMS: {
+    serviceDomain: process.env.MICROCMS_SERVICE_DOMAIN,
+    apiKey: process.env.MICROCMS_API_KEY,
+  },
+
+  nitro: {
+    static: true,
+    prerender: {
+      fallback: "404.html",
+      // fallback: false,
+      // 静的ファイル化したいページ
+      // routes: [
+      //   '/articles/seminar-20230724',
+      //   '/articles/seminar-20241218',
+      // ]
+    },
+  },
 })

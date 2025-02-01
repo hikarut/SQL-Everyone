@@ -1,8 +1,6 @@
 <template>
   <!-- ========== HEADER ========== -->
-  <header
-    class="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full py-2 md:py-6"
-  >
+  <header class="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full py-2 md:py-6">
     <nav
       class="relative max-w-7xl w-full flex flex-wrap md:grid md:grid-cols-12 basis-full items-center px-4 md:px-6 md:px-8 mx-auto"
     >
@@ -80,14 +78,6 @@
           class="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:justify-center md:items-center md:gap-y-0 md:gap-x-7 md:mt-0"
         >
           <div>
-            <NuxtLink
-              class="inline-block text-black hover:text-gray-600 focus:outline-none focus:text-gray-600 dark:text-white dark:hover:text-neutral-300 dark:focus:text-neutral-300"
-              to="/"
-              @click="closeMenu"
-              >トップページ</NuxtLink
-            >
-          </div>
-          <div>
             <a
               class="inline-block text-black hover:text-gray-600 focus:outline-none focus:text-gray-600 dark:text-white dark:hover:text-neutral-300 dark:focus:text-neutral-300"
               href="https://forms.gle/CFKuJCcG81J5EwVA6"
@@ -111,6 +101,14 @@
               to="/seminar"
               @click="closeMenu"
               >セミナー</NuxtLink
+            >
+          </div>
+          <div>
+            <NuxtLink
+              class="inline-block text-black hover:text-gray-600 focus:outline-none focus:text-gray-600 dark:text-white dark:hover:text-neutral-300 dark:focus:text-neutral-300"
+              to="/articles"
+              @click="closeMenu"
+              >記事一覧</NuxtLink
             >
           </div>
         </div>
