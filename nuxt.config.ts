@@ -80,7 +80,8 @@ export default defineNuxtConfig({
   modules: ['nuxt-gtag', '@nuxtjs/sitemap', 'nuxt-microcms-module'],
 
   sitemap: {
-    hostname: 'sql-everyone.com'
+    // hostname: 'sql-everyone.com'
+    hostname: 'https://sql-everyone.com/'
   },
 
   gtag: {
