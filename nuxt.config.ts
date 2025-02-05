@@ -5,6 +5,13 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   ssr: true,
 
+  // sitemapで必要
+  // https://nuxtseo.com/docs/sitemap/getting-started/installation
+  site: { 
+    url: 'https://sql-everyone.com', 
+    name: 'データ分析内製化に向けた人材育成サービス『SQL Everyone』' 
+  },
+
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -78,11 +85,6 @@ export default defineNuxtConfig({
   },
 
   modules: ['nuxt-gtag', '@nuxtjs/sitemap', 'nuxt-microcms-module'],
-
-  sitemap: {
-    // hostname: 'sql-everyone.com'
-    hostname: 'https://sql-everyone.com/'
-  },
 
   gtag: {
     // VercelのProduction,Preview環境のNODE_ENVはproduction。なので別の環境変数を用意
