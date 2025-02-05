@@ -79,6 +79,11 @@ export default defineNuxtConfig({
 
   modules: ['nuxt-gtag', '@nuxtjs/sitemap', 'nuxt-microcms-module'],
 
+  sitemap: {
+    // hostname: 'sql-everyone.com'
+    hostname: 'https://sql-everyone.com/'
+  },
+
   gtag: {
     // VercelのProduction,Preview環境のNODE_ENVはproduction。なので別の環境変数を用意
     // enabled: process.env.NODE_ENV === 'production',
