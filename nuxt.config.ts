@@ -35,6 +35,11 @@ export default defineNuxtConfig({
       // メタタグ
       meta: [
         {
+          hid: 'robots',
+          name: 'robots',
+          content: 'all',
+        },
+        {
           hid: 'keywords',
           name: 'keywords',
           content:
