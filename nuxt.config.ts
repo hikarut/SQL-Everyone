@@ -115,7 +115,7 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['nuxt-gtag', '@nuxtjs/sitemap', 'nuxt-microcms-module'],
+  modules: ['nuxt-gtag', '@nuxtjs/sitemap', 'nuxt-microcms-module', '@nuxtjs/robots'],
 
   gtag: {
     // VercelのProduction,Preview環境のNODE_ENVはproduction。なので別の環境変数を用意
