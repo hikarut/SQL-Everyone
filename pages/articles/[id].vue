@@ -647,6 +647,11 @@ useHead({
       content: img,
     },
     {
+      hid: "og:type",
+      property: "og:type",
+      content: "article",
+    },
+    {
       name: "application-name",
       content: title,
     },
