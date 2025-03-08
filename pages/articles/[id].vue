@@ -647,6 +647,26 @@ useHead({
       content: img,
     },
     {
+      hid: "og:type",
+      property: "og:type",
+      content: "article",
+    },
+    {
+      hid: "twitter:title",
+      property: "twitter:title",
+      content: title,
+    },
+    {
+      hid: "twitter:description",
+      property: "twitter:description",
+      content: description,
+    },
+    {
+      hid: "twitter:image",
+      property: "twitter:image",
+      content: img,
+    },
+    {
       name: "application-name",
       content: title,
     },

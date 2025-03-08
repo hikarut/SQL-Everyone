@@ -47,6 +47,16 @@ export default defineNuxtConfig({
             '『SQL Everyone』はデータ分析内製化に向けた人材育成サービスです。目的・レベルに合わせたSQL分析人材を育成することでデータ分析内製化を支援します。SQLを全く知らない人が受けてもデータ分析で使えるSQLが学べるように、『集合研修プラン』と『マンツーマントレーニングプラン』の2つのサービスを提供しています。',
         },
         {
+          hid: 'og:type',
+          property: 'og:type',
+          content: 'website',
+        },
+        {
+          hid: 'og:site_name',
+          property: 'og:site_name',
+          content: 'データ分析内製化に向けた人材育成サービス『SQL Everyone』',
+        },
+        {
           hid: 'og:image',
           property: 'og:image',
           content: `https://sql-everyone.com/ogimage.png`,
@@ -68,9 +78,25 @@ export default defineNuxtConfig({
             '『SQL Everyone』はデータ分析内製化に向けた人材育成サービスです。目的・レベルに合わせたSQL分析人材を育成することでデータ分析内製化を支援します。SQLを全く知らない人が受けてもデータ分析で使えるSQLが学べるように、『集合研修プラン』と『マンツーマントレーニングプラン』の2つのサービスを提供しています。',
         },
         {
+          hid: 'twitter:title',
+          property: 'twitter:title',
+          content: 'データ分析内製化に向けた人材育成サービス『SQL Everyone』',
+        },
+        {
+          hid: 'twitter:description',
+          property: 'twitter:description',
+          content:
+            '『SQL Everyone』はデータ分析内製化に向けた人材育成サービスです。目的・レベルに合わせたSQL分析人材を育成することでデータ分析内製化を支援します。SQLを全く知らない人が受けてもデータ分析で使えるSQLが学べるように、『集合研修プラン』と『マンツーマントレーニングプラン』の2つのサービスを提供しています。',
+        },
+        {
           hid: 'twitter:card',
           property: 'twitter:card',
           content: 'summary_large_image',
+        },
+        {
+          hid: 'twitter:image',
+          property: 'twitter:image',
+          content: 'https://sql-everyone.com/ogimage.png',
         },
         {
           name: 'application-name',
