@@ -90,6 +90,9 @@ const description = 'SQLやデータ分析に関する記事やイベントの�
 const url = 'https://sql-everyone.com/articles'
 useHead({
   title: title,
+  link: [
+    { rel: 'canonical', href: url },
+  ],
   // メタタグ
   meta: [
     {

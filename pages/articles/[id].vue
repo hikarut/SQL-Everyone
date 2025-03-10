@@ -614,6 +614,9 @@ const url = `https://sql-everyone.com/articles/${params.id}`
 const img = data.value?.eyecatch.url
 useHead({
   title: title,
+  link: [
+    { rel: 'canonical', href: url },
+  ],
   // メタタグ
   meta: [
     {
