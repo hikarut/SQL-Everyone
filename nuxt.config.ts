@@ -31,6 +31,7 @@ export default defineNuxtConfig({
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap',
         },
+        { rel: 'canonical', href: 'https://sql-everyone.com/' },
       ],
       // メタタグ
       meta: [

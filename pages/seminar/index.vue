@@ -169,6 +169,9 @@ const description = 'ビジネスパーソン向けにデータ分析で活用�
 const url = 'https://sql-everyone.com/seminar'
 useHead({
   title: title,
+  link: [
+    { rel: 'canonical', href: url },
+  ],
   // メタタグ
   meta: [
     {
