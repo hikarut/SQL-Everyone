@@ -23,6 +23,9 @@ export default defineNuxtConfig({
 
   app: {
     head: {
+      htmlAttrs: {
+        lang: 'ja'
+      },
       // ページのタイトルやメタタグの設定
       title: 'データ分析内製化に向けた人材育成サービス『SQL Everyone』',
       link: [
