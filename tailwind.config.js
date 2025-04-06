@@ -25,10 +25,10 @@ module.exports = {
               marginTop: '2.25em !important'
             },
             h1: {
-              fontSize: '1.7rem',
+              fontSize: '1.5rem',
             },
             h2: {
-              fontSize: '1.7rem',
+              fontSize: '1.5rem',
             },
             h3: {
               fontSize: '1.2rem',
