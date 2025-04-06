@@ -1,7 +1,8 @@
 <template>
   <!-- ========== FOOTER ========== -->
   <!-- <footer class="mt-auto w-full py-10 px-4 sm:px-6 lg:px-8 mx-auto bg-gradient-to-tl from-blue-600 to-violet-600"> -->
-  <footer class="mt-auto w-full py-10 px-4 sm:px-6 lg:px-8 mx-auto bg-gray-100">
+  <footer class="mt-auto w-full py-10 px-4 sm:px-6 lg:px-8 mx-auto">
+  <!-- <footer class="mt-auto w-full py-10 px-4 sm:px-6 lg:px-8 mx-auto bg-gray-100"> -->
     <!-- <footer class="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto bg-gray-50"> -->
     <!-- Grid -->
     <div class="text-center">
