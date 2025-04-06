@@ -17,7 +17,7 @@
         </figure>
 
         <h1
-          class="font-bold text-xl lg:text-3xl text-gray-800 dark:text-neutral-200 mb-10 mt-10"
+          class="font-bold text-2xl lg:text-3xl text-gray-800 dark:text-neutral-200 mb-10 mt-10"
         >
           {{ data?.title }}
         </h1>
