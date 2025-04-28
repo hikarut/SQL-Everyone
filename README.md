@@ -1,4 +1,9 @@
-# Nuxt Minimal Starter
+# SQL Everyone
+**データ分析内製化に向けた人材育成サービス**
+
+https://sql-everyone.com/
+
+# Develop
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
