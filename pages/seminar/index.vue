@@ -90,7 +90,6 @@
               </div>
               <div class="ms-2.5 sm:ms-4">
                 <h4 class="font-semibold text-white">SQL勉強会</h4>
-                <!-- <p class="text-xs text-white/80">Hikaru Takahashi</p> -->
               </div>
             </div>
             <!-- End Avatar -->
@@ -113,27 +112,58 @@
     <!-- End Grid -->
 
     <h2
-      class="font-bold text-xl lg:text-4xl text-gray-800 dark:text-neutral-200 text-center mb-10 mt-20"
+      class="font-bold text-2xl lg:text-4xl text-gray-800 dark:text-neutral-200 text-center mb-10 mt-20"
     >
       開催情報
     </h2>
-    <ul class="space-y-10">
-      <li v-for="blog in blogs?.contents" :key="blog.id">
-        <!-- 日付は publishedAt を単純表示 (お好みでフォーマット) -->
-        <p class="mb-2 text-gray-500 dark:text-neutral-500">
-          {{ dateFormat(blog.publishedAt) }}
-        </p>
-        <!-- NuxtLinkで個別ページへ飛ぶ想定 -->
+
+    <!-- Card Blog -->
+    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+      <!-- Grid -->
+      <div class="grid lg:grid-cols-1 lg:gap-y-16 gap-10">
+        <!-- Card -->
         <NuxtLink
-          class="text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:outline-none focus:decoration-2 dark:text-neutral-500 dark:hover:text-neutral-400"
+          v-for="blog in blogs?.contents"
+          :key="blog.id"
+          class="group block rounded-xl overflow-hidden focus:outline-none"
           :to="`/articles/${blog.id}`"
         >
-          <h5 class="font-medium text-gray-800 dark:text-neutral-200">
-            {{ blog.title }}
-          </h5>
+          <div class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5">
+            <div
+              class="shrink-0 relative rounded-xl overflow-hidden w-full sm:w-80 h-30"
+            >
+              <img
+                class="w-full object-cover rounded-xl"
+                :src="blog.eyecatch?.url"
+                :width="blog.eyecatch?.width"
+                :height="blog.eyecatch?.height"
+                alt=""
+              />
+            </div>
+
+            <div class="grow">
+              <h3
+                class="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-neutral-300 dark:group-hover:text-white"
+              >
+                {{ blog.title }}
+              </h3>
+              <p class="mt-3 text-gray-600 dark:text-neutral-400">
+                {{ dateFormat(blog.publishedAt) }}
+              </p>
+              <p
+                v-for="(cat, index) in blog.category"
+                :key="index"
+                class="mr-2 mt-2 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 dark:bg-neutral-800 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+              >
+                {{ cat.name }}
+              </p>
+            </div>
+          </div>
         </NuxtLink>
-      </li>
-    </ul>
+        <!-- End Card -->
+      </div>
+    </div>
+
   </div>
   <!-- End Card Blog -->
 </template>

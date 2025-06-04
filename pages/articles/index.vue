@@ -72,6 +72,8 @@ const { data: blogs } = await useMicroCMSGetList<Blog>({
   endpoint: "blogs",
   // queries: { fields: ["id", "title", "eyecatch"] },
   queries: {
+    // セミナー以外を取得
+    filters: "category[not_contains]seminar", // カテゴリのIDを指定
     fields: [
       "id",
       "title",
