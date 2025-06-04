@@ -97,7 +97,7 @@
           >
             SQL Everyoneについて<br />詳細をご確認いただけます
           </p>
-          <NuxtLink to="/" class="w-full flex justify-center">
+          <NuxtLink to="/" class="w-full flex justify-center" target="_blank">
             <button
               class="w-full max-w-[240px] bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 text-white rounded-full px-4 py-2 text-m font-bold"
             >
