@@ -1,6 +1,6 @@
 <template>
   <!-- ========== HEADER ========== -->
-  <header class="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full py-2 md:py-6">
+  <header class="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full py-2 md:py-6 fixed top-0 left-0 bg-white border-b-[1px]">
     <nav
       class="relative max-w-7xl w-full flex flex-wrap md:grid md:grid-cols-12 basis-full items-center px-4 md:px-6 md:px-8 mx-auto"
     >
