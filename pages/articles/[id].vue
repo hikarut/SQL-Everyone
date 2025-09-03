@@ -452,7 +452,6 @@ useHead({
 })
 </script>
 
-
 <style scoped>
 /* 太字の文字の幅を増やす */
 .prose :where(strong):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
