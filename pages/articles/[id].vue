@@ -451,3 +451,11 @@ useHead({
   script: [{ src: "//cdn.iframe.ly/embed.js", async: true }],
 })
 </script>
+
+
+<style scoped>
+/* 太字の文字の幅を増やす */
+.prose :where(strong):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+  font-weight: 700;
+}
+</style>

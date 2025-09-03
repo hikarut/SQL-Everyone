@@ -1,6 +1,6 @@
 <!-- layouts/error.vue -->
 <template>
-  <div>
+  <div class="pt-20">
     <CommonHeader />
     <div class="max-w-[50rem] flex flex-col mx-auto size-full">
       <!-- ========== MAIN CONTENT ========== -->
