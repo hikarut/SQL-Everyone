@@ -22,19 +22,19 @@
           {{ data?.title }}
         </h1>
 
-        <div class="flex items-center justify-between mb-4">
-          <!-- 左側: カテゴリ -->
-          <div v-if="data?.category?.length">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-4">
+          <!-- カテゴリ -->
+          <div v-if="data?.category?.length" class="flex flex-wrap gap-2">
             <span
               v-for="cat in data.category"
               :key="cat.id"
-              class="m-1 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 dark:bg-neutral-800 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+              class="inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 dark:bg-neutral-800 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
             >
               {{ cat.name }}
             </span>
           </div>
 
-          <!-- 右側: 日付 -->
+          <!-- 日付 -->
           <div
             class="shrink-0 text-sm text-gray-600 dark:text-neutral-400 text-right"
           >
