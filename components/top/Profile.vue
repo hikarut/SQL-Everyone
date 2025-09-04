@@ -111,21 +111,69 @@
       </div>
       <!-- End About -->
 
-      <div class="flex items-center gap-x-3 mt-10">
-        <div class="shrink-0">
-          <a href="https://www.amazon.co.jp/dp/4297134438/" target="_blank">
-          <img
-            class="w-32 mx-auto"
-            :src="bookImage"
-            alt="データ分析力を高める ビジネスパーソンのためのSQL入門（技術評論社）"
-          />
-          </a>
-        </div>
-
-        <div class="grow">
-          <h2 class="text-base font-medium text-gray-600 dark:text-neutral-200">
-            著書：<a class="underline hover:text-gray-800 hover:decoration-2 focus:outline-none focus:decoration-2 dark:text-neutral-500 dark:hover:text-neutral-400" href="https://www.amazon.co.jp/dp/4297134438/" target="_blank">データ分析力を高める ビジネスパーソンのためのSQL入門（技術評論社）</a>
-          </h2>
+      <!-- Books Section -->
+      <div class="mt-10">
+        <h3 class="text-lg font-medium text-gray-800 dark:text-neutral-200 mb-6">
+          著書
+        </h3>
+        
+        <!-- Books Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
+          <!-- Book 1 -->
+          <div class="flex items-start gap-4">
+            <div class="shrink-0">
+              <a href="https://www.amazon.co.jp/dp/4297134438/" target="_blank" class="block hover:scale-105 transition-transform duration-300">
+                <img
+                  class="w-28 lg:w-36 h-auto"
+                  :src="bookImage"
+                  alt="データ分析力を高める ビジネスパーソンのためのSQL入門（技術評論社）"
+                />
+              </a>
+            </div>
+            <div class="grow">
+              <h4 class="text-sm font-semibold text-gray-800 dark:text-neutral-200 mb-2 leading-tight">
+                <a 
+                  class="underline hover:text-blue-600 hover:decoration-2 transition-colors duration-300" 
+                  href="https://www.amazon.co.jp/dp/4297134438/" 
+                  target="_blank"
+                >
+                  データ分析力を高める ビジネスパーソンのためのSQL入門
+                </a>
+              </h4>
+              <p class="text-xs text-gray-600 dark:text-neutral-400 mb-3">技術評論社</p>
+              <p class="text-xs text-gray-500 dark:text-neutral-500 leading-relaxed">
+                ビジネスの現場で使えるSQL入門書。データ分析に必要なスキルを実践的に学べる一冊。
+              </p>
+            </div>
+          </div>
+          
+          <!-- Book 2 -->
+          <div class="flex items-start gap-4">
+            <div class="shrink-0">
+              <a href="https://www.amazon.co.jp/o/ASIN/B0F8T47GMY" target="_blank" class="block hover:scale-105 transition-transform duration-300">
+                <img
+                  class="w-28 lg:w-36 h-auto"
+                  :src="softwareDesignImage"
+                  alt="ソフトウェアデザイン 2025年7月号"
+                />
+              </a>
+            </div>
+            <div class="grow">
+              <h4 class="text-sm font-semibold text-gray-800 dark:text-neutral-200 mb-2 leading-tight">
+                <a 
+                  class="underline hover:text-blue-600 hover:decoration-2 transition-colors duration-300" 
+                  href="https://www.amazon.co.jp/o/ASIN/B0F8T47GMY" 
+                  target="_blank"
+                >
+                Software Design 2025年7月号（データ分析のためのSQL講座）
+                </a>
+              </h4>
+              <p class="text-xs text-gray-600 dark:text-neutral-400 mb-3">技術評論社</p>
+              <p class="text-xs text-gray-500 dark:text-neutral-500 leading-relaxed">
+                クエリの書き方、設計、データ加工処理など実践的なSQLの使い方を学べる一冊。
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -136,4 +184,5 @@
 <script setup>
 import profileImage from "~/assets/images/profile.jpg";
 import bookImage from "~/assets/images/book.jpg";
+import softwareDesignImage from "~/assets/images/software_design.jpg";
 </script>
