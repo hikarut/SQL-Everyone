@@ -1,8 +1,7 @@
 <template>
-  <!-- <div class="bg-gray-100"> -->
   <div class="relative overflow-hidden">
     <!-- Gradients -->
-    <div
+    <!-- <div
       aria-hidden="true"
       class="flex absolute -top-96 start-1/2 transform -translate-x-1/2"
     >
@@ -12,7 +11,7 @@
       <div
         class="bg-gradient-to-tl from-blue-50 via-blue-100 to-blue-50 blur-3xl w-[90rem] h-[50rem] rounded-fulls origin-top-left -rotate-12 -translate-x-[15rem] dark:from-indigo-900/70 dark:via-indigo-900/70 dark:to-blue-900/70"
       ></div>
-    </div>
+    </div> -->
     <!-- End Gradients -->
 
     <!-- FAQ -->
