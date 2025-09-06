@@ -75,7 +75,7 @@
         aria-labelledby="hs-navbar-hcail-collapse"
       >
         <div
-          class="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:justify-center md:items-center md:gap-y-0 md:gap-x-7 md:mt-0"
+          class="flex flex-col gap-y-4 gap-x-0 mt-5 pb-4 md:flex-row md:justify-center md:items-center md:gap-y-0 md:gap-x-7 md:mt-0 md:pb-0"
         >
           <div>
             <a
