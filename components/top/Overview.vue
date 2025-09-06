@@ -104,7 +104,8 @@
               ビジネスパーソン向けにSQLの基礎について学習。ハンズオンを交えてデータ分析で使うSQLについて理解を深める研修。
             </p>
 
-            <ul class="mt-7 space-y-2.5 text-sm text-left">
+            <div class="mt-7 pt-4 border-t border-gray-200 dark:border-neutral-700">
+              <ul class="space-y-2.5 text-sm text-left">
               <li class="flex gap-x-2">
                 <svg class="shrink-0 mt-0.5 size-4 text-blue-600 dark:text-blue-500" xmlns="http://www.w3.org/2000/svg"
                   width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -158,7 +159,8 @@
                   <span class="font-bold">目的：</span>データ分析で使うSQLの概要について理解する
                 </span>
               </li>
-            </ul>
+              </ul>
+            </div>
 
           </div>
         </div>
@@ -183,7 +185,8 @@
               データ分析で使うSQLをマンツーマンで基礎から応用まで学習。ゼロから3ヶ月で実務でSQLを使えるレベルまで成長をサポート。
             </p>
 
-            <ul class="mt-7 space-y-2.5 text-sm text-left">
+            <div class="mt-7 pt-4 border-t border-gray-200 dark:border-neutral-700">
+              <ul class="space-y-2.5 text-sm text-left">
               <li class="flex gap-x-2">
                 <svg class="shrink-0 mt-0.5 size-4 text-blue-600 dark:text-blue-500" xmlns="http://www.w3.org/2000/svg"
                   width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -237,7 +240,8 @@
                   <span class="font-bold">目的：</span>実務のデータ分析でSQLが使えるようになる
                 </span>
               </li>
-            </ul>
+              </ul>
+            </div>
 
           </div>
         </div>
