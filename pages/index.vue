@@ -5,7 +5,7 @@
     <TopDocument />
     <TopDetail />
     <TopProfile />
-    <TopPrice />
+    <!-- <TopPrice /> -->
     <TopFaq />
   </div>
 </template>
