@@ -10,10 +10,10 @@
         <img
           class="rounded-xl w-8 h-8 mx-auto mb-3"
           :src="sqlIconImage"
-          alt="Features Image"
+          alt="SQL Everyone Icon"
         />
       </div>
-      <div>
+      <div class="mb-4">
         <NuxtLink
           class="flex-none text-xl font-semibold text-black dark:text-white"
           to="/"
@@ -21,20 +21,26 @@
           >SQL Everyone</NuxtLink
         >
       </div>
-      <!-- End Col -->
 
-      <div class="mt-3">
-        <div class="text-gray-500 dark:text-neutral-500">
-        <!-- <div class="text-white dark:text-neutral-500"> -->
-          <p class="mb-2">
-            Copyright &copy;&nbsp;{{ date }}&nbsp;-&nbsp;SQL Everyone
-          </p>
-          <p>
-            <a href="mailto:ht.hikaru.takahashi@gmail.com"
-              >ht.hikaru.takahashi@gmail.com</a
-            >
-          </p>
-        </div>
+      <div class="text-sm text-gray-500 dark:text-neutral-500 mb-3 space-x-4">
+        <NuxtLink to="/terms" class="hover:text-gray-600 dark:hover:text-neutral-400">
+          利用規約
+        </NuxtLink>
+        <span>|</span>
+        <NuxtLink to="/privacy" class="hover:text-gray-600 dark:hover:text-neutral-400">
+          プライバシーポリシー
+        </NuxtLink>
+      </div>
+
+      <div class="text-gray-500 dark:text-neutral-500 text-sm">
+        <p class="mb-1">
+          Copyright &copy;&nbsp;{{ date }}&nbsp;-&nbsp;SQL Everyone
+        </p>
+        <p>
+          <a href="mailto:ht.hikaru.takahashi@gmail.com" class="hover:text-gray-600 dark:hover:text-neutral-400"
+            >ht.hikaru.takahashi@gmail.com</a
+          >
+        </p>
       </div>
 
     </div>
